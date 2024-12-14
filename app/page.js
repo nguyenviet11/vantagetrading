@@ -33,8 +33,8 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const exness_url = "https://one.exnesstrack.org/a/zkage6az7b"
-  const fxgt_url = "https://fxgt.link/register/?refid=21758"
+  const exness_url = "https://one.exnesstrack.org/a/zkage6az7b";
+  const fxgt_url = "https://fxgt.link/register/?refid=21758";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +58,10 @@ export default function Home() {
             <div className={styles.navRight}>
               <ul className={styles.flex}>
                 <li className={styles.navMediumUserList}>
-                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
+                  <a
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    target="_blank"
+                  >
                     <p className={styles.navLiveLink}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +155,11 @@ export default function Home() {
           <div className={styles.slide1}>
             <Image src={slide_1} alt="slide 1" className={styles.slideImage1} />
             <div className={styles.bottomBlockBox}>
-              <a className={styles.row3Btn} target="_blank" href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2">
+              <a
+                className={styles.row3Btn}
+                target="_blank"
+                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+              >
                 エントリーフォームはこちら
                 <span className={styles.btnArrow}>
                   <MdOutlineKeyboardArrowRight className={styles.iconArrow} />
@@ -178,7 +185,17 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.slide3}>
-            <Image src={slide_3} alt="slide 3" className={styles.slideImage3} />
+            <a
+              className={styles.row3Btn}
+              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+              target="_blank"
+            >
+              <Image
+                src={slide_3}
+                alt="slide 3"
+                className={styles.slideImage3}
+              />
+            </a>
           </div>
         </Slide>
       </div>
@@ -982,7 +999,10 @@ export default function Home() {
                               <tbody>
                                 <tr>
                                   <td className={styles.bgColorGray02}>
-                                    <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
+                                    <a
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      target="_blank"
+                                    >
                                       <div>
                                         <Image
                                           src={logo}
@@ -1017,7 +1037,10 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td className={styles.bgColorGray02}>
-                                    <a href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494" target="_blank">
+                                    <a
+                                      href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={broker_logo_tfx}
                                         alt="Logo vantage"
@@ -1075,7 +1098,10 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td className={styles.bgColorGray02}>
-                                    <a href="https://clicks.affstrack.com/c?c=999173&l=en&p=0" target="_blank">
+                                    <a
+                                      href="https://clicks.affstrack.com/c?c=999173&l=en&p=0"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={broker_logo_xem}
                                         alt="XMTrading"
@@ -1149,7 +1175,10 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
+                                    <a
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={logo}
                                         alt="Vantage"
@@ -1167,46 +1196,52 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494" target="_blank">
-                                    <Image
-                                      src={broker_logo_tfx}
-                                      alt="Logo broker_logo_tfx"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
+                                    <a
+                                      href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494"
+                                      target="_blank"
                                     >
-                                      Blade口座
-                                    </span>
+                                      <Image
+                                        src={broker_logo_tfx}
+                                        alt="Logo broker_logo_tfx"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        Blade口座
+                                      </span>
                                     </a>
                                   </td>
                                   <td className={styles.center}>1.7pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href={exness_url} target="_blank">
-                                    {" "}
-                                    <Image
-                                      src={broker_logo_exn}
-                                      alt="Exness"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      PRO口座
-                                    </span>
+                                    <a href={exness_url} target="_blank">
+                                      {" "}
+                                      <Image
+                                        src={broker_logo_exn}
+                                        alt="Exness"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        PRO口座
+                                      </span>
                                     </a>
                                   </td>
                                   <td className={styles.center}>1.2pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://clicks.affstrack.com/c?c=999173&l=en&p=0" target="_blank">
+                                    <a
+                                      href="https://clicks.affstrack.com/c?c=999173&l=en&p=0"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={broker_logo_xem}
                                         alt="XMTrading"
@@ -1225,20 +1260,20 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href={fxgt_url} target="_blank">
-                                    {" "}
-                                    <Image
-                                      src={broker_logo_fxg}
-                                      alt="FXGT"
-                                      width="140"
-                                      height="47"
-                                      className="w110px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      PRO口座
-                                    </span>
+                                    <a href={fxgt_url} target="_blank">
+                                      {" "}
+                                      <Image
+                                        src={broker_logo_fxg}
+                                        alt="FXGT"
+                                        width="140"
+                                        height="47"
+                                        className="w110px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        PRO口座
+                                      </span>
                                     </a>
                                   </td>
                                   <td className={styles.center}>1.1pips</td>
@@ -1253,26 +1288,32 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
-                                    <Image
-                                      src={logo}
-                                      alt="Vantage"
-                                      width="115"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
+                                    <a
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      target="_blank"
                                     >
-                                      ECN口座
-                                    </span>
-                                  </a>
+                                      <Image
+                                        src={logo}
+                                        alt="Vantage"
+                                        width="115"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        ECN口座
+                                      </span>
+                                    </a>
                                   </td>
                                   <td className={styles.center}>1.3pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494" target="_blank">
+                                    <a
+                                      href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={broker_logo_tfx}
                                         alt="Logo vantage"
@@ -1291,26 +1332,29 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href={exness_url} target="_blank">
-                                    <Image
-                                      src={broker_logo_exn}
-                                      alt="Exness"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      PRO口座
-                                    </span>
+                                    <a href={exness_url} target="_blank">
+                                      <Image
+                                        src={broker_logo_exn}
+                                        alt="Exness"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        PRO口座
+                                      </span>
                                     </a>
                                   </td>
                                   <td className={styles.center}>1.3pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href="https://clicks.affstrack.com/c?c=999173&l=en&p=0" target="_blank">
+                                    <a
+                                      href="https://clicks.affstrack.com/c?c=999173&l=en&p=0"
+                                      target="_blank"
+                                    >
                                       <Image
                                         src={broker_logo_xem}
                                         alt="XMTrading"
@@ -1329,8 +1373,8 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                  <a href={fxgt_url} target="_blank">
-                                    <Image
+                                    <a href={fxgt_url} target="_blank">
+                                      <Image
                                         src={broker_logo_fxg}
                                         alt="FXGT"
                                         width="140"
@@ -2887,14 +2931,22 @@ export default function Home() {
                   </ul>
                 </div>
                 <p className={styles.sideBtnCommon01}>
-                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">海外FX業者 人気ランキング &gt;</a>
+                  <a
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    target="_blank"
+                  >
+                    海外FX業者 人気ランキング &gt;
+                  </a>
                 </p>
                 <div style={{ marginTop: 25 }}>
-                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
+                  <a
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    target="_blank"
+                  >
                     <Image
-                        src={vantage_banner}
-                        alt="vantage banner"
-                        style={{ width: "100%", height: "100%" }}
+                      src={vantage_banner}
+                      alt="vantage banner"
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </a>
                 </div>
@@ -3071,7 +3123,10 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className={styles.bottomBlockBox02}>
-                  <a className={styles.row3Btn} href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2">
+                  <a
+                    className={styles.row3Btn}
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                  >
                     最短3分でお取引可能！
                     <br />
                     無料口座開設はこちら
