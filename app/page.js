@@ -33,6 +33,8 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const exness_url = "https://one.exnesstrack.org/a/zkage6az7b"
+  const fxgt_url = "https://fxgt.link/register/?refid=21758"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1044,7 +1046,7 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td className={styles.bgColorGray02}>
-                                    <a href="!#" target="_blank">
+                                    <a href={exness_url} target="_blank">
                                       <Image
                                         src={broker_logo_exn}
                                         alt="Exness"
@@ -1102,7 +1104,7 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td className={styles.bgColorGray02}>
-                                    <a href="!#">
+                                    <a href={fxgt_url} target="_blank">
                                       <Image
                                         src={broker_logo_fxg}
                                         alt="FXGT"
@@ -1147,25 +1149,28 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                    <Image
-                                      src={logo}
-                                      alt="Vantage"
-                                      width="115"
-                                      height="47"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      ECN口座ss
-                                    </span>
+                                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
+                                      <Image
+                                        src={logo}
+                                        alt="Vantage"
+                                        width="115"
+                                        height="47"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        ECN口座
+                                      </span>
+                                    </a>
                                   </td>
-                                  <td class="bgColorYellow01">1.1pips</td>
+                                  <td className={styles.center}>1.1pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494" target="_blank">
                                     <Image
                                       src={broker_logo_tfx}
-                                      alt="Logo vantage"
+                                      alt="Logo broker_logo_tfx"
                                       width="140"
                                       height="47"
                                       className="w115px mla mra"
@@ -1175,11 +1180,13 @@ export default function Home() {
                                     >
                                       Blade口座
                                     </span>
+                                    </a>
                                   </td>
-                                  <td>1.7pips</td>
+                                  <td className={styles.center}>1.7pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href={exness_url} target="_blank">
                                     {" "}
                                     <Image
                                       src={broker_logo_exn}
@@ -1193,28 +1200,32 @@ export default function Home() {
                                     >
                                       PRO口座
                                     </span>
+                                    </a>
                                   </td>
-                                  <td>1.2pips</td>
+                                  <td className={styles.center}>1.2pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                    <Image
-                                      src={broker_logo_xem}
-                                      alt="XMTrading"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      zero口座
-                                    </span>
+                                  <a href="https://clicks.affstrack.com/c?c=999173&l=en&p=0" target="_blank">
+                                      <Image
+                                        src={broker_logo_xem}
+                                        alt="XMTrading"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        zero口座
+                                      </span>
+                                    </a>
                                   </td>
-                                  <td>1.8pips</td>
+                                  <td className={styles.center}>1.8pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href={fxgt_url} target="_blank">
                                     {" "}
                                     <Image
                                       src={broker_logo_fxg}
@@ -1228,8 +1239,9 @@ export default function Home() {
                                     >
                                       PRO口座
                                     </span>
+                                    </a>
                                   </td>
-                                  <td>1.1pips</td>
+                                  <td className={styles.center}>1.1pips</td>
                                 </tr>
                                 <tr>
                                   <td
@@ -1241,6 +1253,7 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2" target="_blank">
                                     <Image
                                       src={logo}
                                       alt="Vantage"
@@ -1253,28 +1266,32 @@ export default function Home() {
                                     >
                                       ECN口座
                                     </span>
+                                  </a>
                                   </td>
-                                  <td className="bgColorYellow01">1.3pips</td>
+                                  <td className={styles.center}>1.3pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                    <Image
-                                      src={broker_logo_tfx}
-                                      alt="Logo vantage"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      Blade口座
-                                    </span>
+                                  <a href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494" target="_blank">
+                                      <Image
+                                        src={broker_logo_tfx}
+                                        alt="Logo vantage"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        Blade口座
+                                      </span>
+                                    </a>
                                   </td>
-                                  <td>2.2pips </td>
+                                  <td className={styles.center}>2.2pips </td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href={exness_url} target="_blank">
                                     <Image
                                       src={broker_logo_exn}
                                       alt="Exness"
@@ -1287,42 +1304,47 @@ export default function Home() {
                                     >
                                       PRO口座
                                     </span>
+                                    </a>
                                   </td>
-                                  <td>1.3pips</td>
+                                  <td className={styles.center}>1.3pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
-                                    <Image
-                                      src={broker_logo_xem}
-                                      alt="XMTrading"
-                                      width="140"
-                                      height="47"
-                                      className="w115px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      zero口座
-                                    </span>
+                                  <a href="https://clicks.affstrack.com/c?c=999173&l=en&p=0" target="_blank">
+                                      <Image
+                                        src={broker_logo_xem}
+                                        alt="XMTrading"
+                                        width="140"
+                                        height="47"
+                                        className="w115px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        zero口座
+                                      </span>
+                                    </a>
                                   </td>
-                                  <td>2.2pips</td>
+                                  <td className={styles.center}>2.2pips</td>
                                 </tr>
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
+                                  <a href={fxgt_url} target="_blank">
                                     <Image
-                                      src={broker_logo_fxg}
-                                      alt="FXGT"
-                                      width="140"
-                                      height="47"
-                                      className="w110px mla mra"
-                                    />
-                                    <span
-                                      className={`${styles.fs09} ${styles.center}`}
-                                    >
-                                      PRO口座
-                                    </span>
+                                        src={broker_logo_fxg}
+                                        alt="FXGT"
+                                        width="140"
+                                        height="47"
+                                        className="w110px mla mra"
+                                      />
+                                      <span
+                                        className={`${styles.fs09} ${styles.center}`}
+                                      >
+                                        PRO口座
+                                      </span>
+                                    </a>
                                   </td>
-                                  <td className="borderBottomNone">2.0pips</td>
+                                  <td className={styles.center}>2.0pips</td>
                                 </tr>
                               </tbody>
                             </table>
