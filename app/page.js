@@ -330,8 +330,7 @@ export default function Home() {
                         </li>
                         <li>
                           <h4>
-                            新規口座開設で13,000円（当社限定
-                            15,000円）のボーナス加算あり
+                            新規口座開設で13,000円のボーナス加算あり
                           </h4>
                         </li>
                         <li>
@@ -2753,6 +2752,7 @@ export default function Home() {
             </div>
             <div className={styles.layoutSide01}>
               <div className={styles.wrapperLayoutSide}>
+                <div>
                 <a
                   href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                   target="_blank"
@@ -2950,6 +2950,7 @@ export default function Home() {
                     />
                   </a>
                 </div>
+                </div>
               </div>
             </div>
           </div>
@@ -3142,6 +3143,7 @@ export default function Home() {
           </div>
         </section>
         <footer className={styles.footer}>
+          <div className={styles.zIndexx}>
           <div className={styles.inner}>
             <div className={styles.footerConnect}>
               <ul className={styles.footerShare}>
@@ -3228,7 +3230,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.txt}>
-                    <p className={styles.subTxt}>Vantage Trading 当社限定</p>
+                    <p className={styles.subTxt}>Vantage Trading</p>
                     <p className={styles.marker}>
                       15,000円 + 20ドルトレード資金プレゼント
                     </p>
@@ -3252,6 +3254,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </footer>
       </div>

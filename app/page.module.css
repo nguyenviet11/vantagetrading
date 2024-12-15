@@ -327,6 +327,7 @@
   background-color: #fff;
   position: relative;
   padding-bottom: 15px;
+  z-index: 9;
 }
 .rankingListContentsInner {
   padding: 25px;
@@ -549,7 +550,6 @@
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   position: relative;
   gap: 20px;
 }
@@ -582,7 +582,10 @@
   width: 30%;
 }
 .wrapperLayoutSide {
+  position: fixed;
+  top: 12vh;
   padding: 16px;
+  max-width: 362px;
 }
 .layoutMain01Visual01 {
   margin-bottom: -7px;
@@ -1124,7 +1127,7 @@
   text-align: right;
 }
 .sideRanking01 {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 10px 5px 5px;
   background: none;
 }
@@ -1336,9 +1339,7 @@
   margin-bottom: 36px;
   font-weight: 700;
 }
-.footer {
-  padding-bottom: 50px;
-}
+
 .footerShare {
   padding: 18px 0;
   width: 100%;
@@ -1354,6 +1355,8 @@
   background: #034854;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 50px;
+  position: relative;
 }
 .footer p {
   font-size: 18px;
@@ -1446,6 +1449,7 @@
 }
 .wrapperVantage {
   display: flex;
+  position: relative;
   background-color: #fff;
   padding-bottom: 40px;
 }
@@ -1527,6 +1531,9 @@
 }
 .isMobile{
   display: none;
+}
+.zIndex{
+  z-index: 12;
 }
 @media screen and (max-width: 1600px) {
   .bannerImage {
@@ -1613,7 +1620,14 @@
   .right{
     width: 100%;
   }
-  
+  .wrapperLayoutSide {
+    position: static;
+    padding: 16px;
+    max-width: 100%;
+  }
+  .layoutSide01{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 900px) {
   .footerBtn01Inner{
