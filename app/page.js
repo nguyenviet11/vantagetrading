@@ -330,7 +330,7 @@ export default function Home() {
                         </li>
                         <li>
                           <h4>
-                            新規口座開設で13,000円のボーナス加算あり
+                            新規口座開設で15,000円のボーナス加算あり
                           </h4>
                         </li>
                         <li>
@@ -398,7 +398,7 @@ export default function Home() {
                           style={{ width: "100%", height: "100%" }}
                         />
                       </div>
-                      <div style={{ marginLeft: 7 }}>最終更新：2024.10.03</div>
+                      <div style={{ marginLeft: 7 }}>最終更新：2024.12.16</div>
                     </div>
                   </div>
                 </div>

@@ -1197,7 +1197,7 @@
 }
 .typeA {
   border-radius: 50%;
-  background-color: #005b40;
+  background-color: rgb(148, 179, 26);
 }
 .typeB {
   border-radius: 50%;
@@ -1454,11 +1454,12 @@
   padding-bottom: 40px;
 }
 .footerBtn01 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #034854;
   width: 100%;
   position: fixed !important;
   bottom: 0;
   left: 0;
+  opacity: 0.9;
   z-index: 10;
   color: #fff;
   min-height: 80px;
@@ -1521,7 +1522,7 @@
 }
 .btnAccount05 a{
   box-sizing: border-box;
-  background: #ff9326;
+  background: rgb(148, 179, 26);
   padding: 15px 10px;
   color: #FFF !important;
   text-decoration: none !important;
