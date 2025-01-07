@@ -24,6 +24,7 @@ import broker_logo_big from "../public/broker_logo_big.webp";
 import vantage_banner from "../public/vantage_banner.png";
 import features_img02 from "../public/features_img02.webp";
 import open_account from "../public/public-open-account-application-left-img.webp";
+import icon_check from "../public/icon_check.webp";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
@@ -205,7 +206,17 @@ export default function Home() {
             <div className={styles.rankingListContentsInner}>
               <div className={styles.rankingListTitle}>
                 <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2">
-                  <div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                    }}
+                    className={styles.rankingBox}
+                  >
+                    <h3 style={{ textAlign: "center" }}>
+                      Vantage （ヴァンテージ）
+                    </h3>
                     <div className={styles.mb10po}>
                       <div className={styles.fs09}>
                         オーストラリア証券投資委員会（ASIC）
@@ -221,20 +232,19 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
-                    <h3>Vantage （ヴァンテージ）</h3>
                   </div>
                 </a>
-                <div className={styles.logoTrading}>
+                {/* <div className={styles.logoTrading}>
                   <Image
                     src={logo}
                     alt="logo tradding"
                     width={200}
                     height={70}
                   />
-                </div>
+                </div> */}
               </div>
               <div className={styles.dispTablePO}>
-                <div className={styles.w330px}>
+                {/* <div className={styles.w330px}>
                   <div className={styles.rankingListVisual}>
                     <div className={styles.mb10po}>
                       <Image
@@ -259,100 +269,86 @@ export default function Home() {
                       / 30.00
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className={styles.rankingList}>
                   <p className={styles.rankingListCatch}>
                     オーストラリア発の大手企業が日本市場に再参入。取引コストは業界最安値
                   </p>
-                  <p className={styles.rankingListTxt}>
+                  <div className={styles.styleLabel}>
                     Vantage
-                    Trading（ヴァンテージ）は、狭いスプレッドと1,000種類以上の取引銘柄を提供することで、グローバルな市場において多くの支持を得ています。日本市場においては一度は撤退を余儀なくされましたが、2022年に再参入しており、優れたサービスを提供しています。
-                    <br />
-                    Vantageが提供するECN口座は、プロトレーダーの厳しい要求に応え、高いレベルの取引環境を提供することで業界トップクラスの取引口座として評価されています。また、Vantageはトレーダーの利益を最大化するために、入金ボーナスやスワップフリーなども提供しており、トレーダーのニーズに合わせたサービスも魅力のひとつです。
-                  </p>
-                  <div className={styles.flex} style={{ gap: 10 }}>
-                    <div className={styles.w50}>
-                      <a
-                        href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                        target="_blank"
-                      >
-                        <div className={styles.btnAccount03}>
-                          <TiTick
-                            style={{ transform: "translateY(3px)" }}
-                            fontSize={40}
-                          />
-                          <span
-                            style={{
-                              transform: "translateY(-10px)",
-                              display: "inline-block",
-                              verticalAlign: "middle",
-                            }}
-                          >
-                            リアル口座開設
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                    <div className={styles.w50}>
-                      <a
-                        href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                        target="_blank"
-                      >
-                        <div className={styles.btnWeb03}>
-                          <span className={styles.btnIcon03}>
-                            オフィシャルサイトへ
-                          </span>
-                        </div>
-                      </a>
-                    </div>
+                    Trading（ヴァンテージ）は、狭いスプレッドと1,000種類以上の取引銘柄を提供することで、グローバルな市場において多くの支持を得ています。日本市場においては一度は撤退を余儀なくされましたが、2022年に再参入しており、優れたサービスを提供しています。Vantageが提供するECN口座は、プロトレーダーの厳しい要求に応え、高いレベルの取引環境を提供することで
                   </div>
-                  <div>
-                    <div className={styles.rankingListCommentTitle}>
-                      主な特徴をまとめると
-                    </div>
+                  <div className={styles.styleLabel}>
+                    業界トップクラスの取引口座として評価されています。また、Vantageはトレーダーの利益を最大化するために、入金ボーナスやスワップフリーなども提供しており、トレーダーのニーズに合わせたサービスも魅力のひとつです。
+                  </div>
+                  <div
+                    className={styles.flex}
+                    style={{ gap: 10, justifyContent: "center" }}
+                  >
+                    <a
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      target="_blank"
+                      className={styles.btnAccount03}
+                    >
+                      リアル口座開設
+                    </a>
+                    <a
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      target="_blank"
+                      className={styles.btnAccount04}
+                    >
+                      オフィシャルサイトへ
+                    </a>
+                  </div>
+                  <div className={styles.mb10po}>
+                    <Image
+                      src={van02}
+                      alt="XMTrading（エックス エム）"
+                      style={{ width: "100%" }}
+                      height="750"
+                    />
+                  </div>
+                  <div className={styles.rankingListCommentBox}>
                     <div className={styles.rankingListComment}>
+                      <div className={styles.rankingListCommentTitle}>
+                        主な特徴をまとめると
+                      </div>
                       <ul className={styles.ul05}>
                         <li>
-                          <h4>
-                            世界5カ国(FCA、ASIC、VFSC、CIMA、FSCA)でライセンスを持つメジャーブローカーとして。Vantage
+                          <span>
+                            世界5カ国(FCA、ASIC、VFSC、CIMA、FSCA)でライセンスを持つメジャーブローカーとして。
+                          </span>{" "}
+                          <br />
+                          <span>
+                            Vantage
                             Tradingは、2009年にオーストラリアで設立された海外FXブローカーです
-                          </h4>
+                          </span>
                         </li>
                         <li>
-                          <h4>
-                            新規口座開設・入金ボーナス、取引ボーナスなどのインセンティブが豊富
-                          </h4>
+                          新規口座開設・入金ボーナス、取引ボーナスなどのインセンティブが豊富
                         </li>
                         <li>
-                          <h4>
-                            最大2,000倍のレバレッジ取引が可能で、スプレッドは平均より広め
-                          </h4>
+                          最大2,000倍のレバレッジ取引が可能で、スプレッドは平均より広め
                         </li>
+                        <li>新規口座開設で15,000円のボーナス加算あり</li>
                         <li>
-                          <h4>
-                            新規口座開設で15,000円のボーナス加算あり
-                          </h4>
-                        </li>
-                        <li>
-                          <h4>
-                            注文の成約率が高く、約定スピードが早い（99.53%が1秒以内に執行）
-                          </h4>
+                          注文の成約率が高く、約定スピードが早い（99.53%が1秒以内に執行）
                         </li>
                       </ul>
                     </div>
+                    <Image src={chart} style={{ width: "50%" }} height="500" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className={styles.rankingListBtnDetail}>
-              <div className={styles.btnWeb03} style={{ padding: "15px 0px" }}>
-                <a
-                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                  target="_blank"
-                >
-                  オフィシャルサイトへ
-                </a>
-              </div>
+            <div style={{ display: "flex", justifyContent: "center" }} className={styles.btnAcc}>
+              <a
+                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                target="_blank"
+                className={styles.btnAccount04}
+              >
+                オフィシャルサイトへ
+              </a>
             </div>
           </div>
         </div>
@@ -361,17 +357,11 @@ export default function Home() {
         <div className={styles.wide}>
           <div className={styles.wrapper}>
             <div className={styles.layoutMain01}>
-              <div className={styles.layoutMainTitle01}>
-                <div className={styles.layoutMainTitle01Inner}>
-                  <div>
-                    <span style={{ color: "#383838" }}>
-                      Vantage Trading（ヴァンテージ）
-                    </span>
-                  </div>
-                  <h1 className={styles.layoutMainTitle01Txt}>
-                    Vantage Trading（ヴァンテージ）の評価と特徴
-                  </h1>
-                </div>
+              <div className={styles.layoutMainTitle01Inner}>
+                <h1 className={styles.layoutMainTitle01Txt}>
+                  Vantage Trading（ヴァンテージ）の評価と特徴
+                </h1>
+                <span>Vantage Trading（ヴァンテージ）</span>
               </div>
               <div className={styles.layoutMain01Inner01}>
                 <div className={styles.layoutMain01Visual01}>
@@ -382,24 +372,18 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.layoutMain01Visual02}>
+                  <button className={styles.iconCommon02}>
+                    Vantage Trading
+                  </button>
                   <div className={styles.flex}>
-                    <div>
-                      <p>
-                        <span className={styles.iconCommon02}>
-                          Vantage Trading
-                        </span>
-                      </p>
+                    <div className={styles.iconChange}>
+                      <Image
+                        src={icon_update02}
+                        alt="icon change"
+                        style={{ width: "100%", height: "100%" }}
+                      />
                     </div>
-                    <div className={styles.flex}>
-                      <div className={styles.iconChange}>
-                        <Image
-                          src={icon_update02}
-                          alt="icon change"
-                          style={{ width: "100%", height: "100%" }}
-                        />
-                      </div>
-                      <div style={{ marginLeft: 7 }}>最終更新：2024.12.16</div>
-                    </div>
+                    <div className={styles.information} style={{ marginLeft: 7 }}>最終更新：2024.12.16</div>
                   </div>
                 </div>
                 <div className={styles.section}>
@@ -408,29 +392,27 @@ export default function Home() {
                   </h2>
                   <div className={styles.contentsLayout01}>
                     <div className={styles.layout}>
-                      <p>
-                        <a
-                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                          target="_blank"
-                        >
-                          <span className={styles.tUl}>Vantage Trading</span>
-                        </a>
-                        （ヴァンテージ）は2009年にオーストラリアで創業した海外FXブローカーです。FXブローカーの中でも特にグローバルに事業展開しており、Vantageを利用可能な国は世界172カ国にのぼります。
-                      </p>
-                      <p>
+                      <div className={styles.styleLabel} style={{marginTop:"40px"}}>
+                        Vantage
+                        Trading（ヴァンテージ）は2009年にオーストラリアで創業した海外FXブローカーです。FXブローカーの中でも特にグローバルに事業展開しており、Vantageを利用可能な国は世界172カ国にのぼります。
+                      </div>
+                      <div className={styles.styleLabel}>
                         2020年12月に一度日本居住者に対するサービス提供を停止しましたが、2022年8月から再開となりました。Vantageは豊富な銘柄や低取引コストに加え入金ボーナスを提供するなど、総合的にハイスペックなサービスが注目を集めています。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         日本ではまだまだ知名度が低いですが、これから人気が高まっていきそうなVantageの評価と特徴について、詳しく解説していきたいと思います。
-                      </p>
+                      </div>
                     </div>
                     <div className={styles.textLayoutWide}>
-                      <div className={styles.point01Name01}>
-                        <div>
-                          <span className={styles.point01Name01Item}>
-                            Vantageのメリット
-                          </span>
-                        </div>
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <img
+                          className={styles.point_icon}
+                          src="icon_success.webp"
+                          alt="img"
+                        />
+                        <span className={styles.point01Name01Item}>
+                          Vantageのメリット
+                        </span>
                       </div>
                       <div className={styles.point01Txt01}>
                         <table className={styles.mbNone}>
@@ -476,12 +458,15 @@ export default function Home() {
                       </div>
                     </div>
                     <div className={styles.textLayoutWide}>
-                      <div className={styles.point01Name02}>
-                        <div>
-                          <span className={styles.point01Name02Item}>
-                            Vantageのデメリット
-                          </span>
-                        </div>
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <img
+                          className={styles.point_icon}
+                          src="icon_error.webp"
+                          alt="img"
+                        />
+                        <span className={styles.point01Name02Item}>
+                          Vantageのデメリット
+                        </span>
                       </div>
                       <div>
                         <div className={styles.point01Txt02}>
@@ -506,271 +491,316 @@ export default function Home() {
                       className={`${styles.textLayoutWide} ${styles.agenda01}`}
                     >
                       <div className={styles.agenda01Title01}>
-                        <div>
-                          <span className={styles.iconCommon01}>
-                            <Image
-                              src={icon_agenda01}
-                              alt="Agenda"
-                              width={21}
-                              height={16}
-                            />
-                          </span>
-                        </div>
-                        <div className={styles.b} style={{ marginLeft: 14 }}>
-                          この記事の目次
-                        </div>
-                        <div style={{ color: "#005b40" }}>
-                          ［<span>非</span>表示］
-                        </div>
+                        この記事の目次［非表示］
                       </div>
                       <div className={styles.agenda01Title02}>
-                        <ol>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>1</span>
-                              <a href="#article01">
-                                Vantage TradingとはどんなFX会社？
-                              </a>
-                            </p>
-                            <ol>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  1-1
-                                </span>
-                                <a href="#article01-01">
-                                  Vantage Tradingの信頼性と安全性
+                        <ol className={styles.agendaOptionList}>
+                          <div className={styles.agendaOptionBox}>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>1</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article01"
+                                >
+                                  Vantage TradingとはどんなFX会社？
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  1-2
-                                </span>
-                                <a href="#article01-02">
-                                  顧客の資産保護にも優れている
+                              </div>
+                              <ol>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    1-1
+                                  </span>
+                                  <a href="#article01-01">
+                                    Vantage Tradingの信頼性と安全性
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    1-2
+                                  </span>
+                                  <a href="#article01-02">
+                                    顧客の資産保護にも優れている
+                                  </a>
+                                </li>
+                              </ol>
+                            </li>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>2</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article02"
+                                >
+                                  Vantage Tradingの良い評判やメリット
                                 </a>
-                              </li>
-                            </ol>
-                          </li>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>2</span>
-                              <a href="#article02">
-                                Vantage Tradingの良い評判やメリット
-                              </a>
-                            </p>
-                            <ol>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-1
-                                </span>
-                                <a href="#article02-01">
-                                  ハイスペックな取引条件
+                              </div>
+                              <ol>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-1
+                                  </span>
+                                  <a href="#article02-01">
+                                    ハイスペックな取引条件
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-2
+                                  </span>
+                                  <a href="#article02-02">
+                                    豪華な入金ボーナスを実施
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-3
+                                  </span>
+                                  <a href="#article02-03">
+                                    約定力に優れる取引サーバー
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-4
+                                  </span>
+                                  <a href="#article02-04">
+                                    取引可能な銘柄数は海外FXブローカーの中でもトップクラス
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-5
+                                  </span>
+                                  <a href="#article02-05">
+                                    スキャルピングやEAの制限がなく、ストップレベルもゼロ
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-6
+                                  </span>
+                                  <a href="#article02-06">
+                                    独自プラットフォーム「ProTrader」を利用可能
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-7
+                                  </span>
+                                  <a href="#article02-07">
+                                    プレミアム口座は2,000倍のレバレッジが利用できる
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    2-8
+                                  </span>
+                                  <a href="#article02-08">
+                                    Vポイントという独自プログラム
+                                  </a>
+                                </li>
+                              </ol>
+                            </li>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>3</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article03"
+                                >
+                                  Vantage Tradingの悪い評判やデメリット
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-2
-                                </span>
-                                <a href="#article02-02">
-                                  豪華な入金ボーナスを実施
+                              </div>
+                              <ol>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    3-1
+                                  </span>
+                                  <a href="#article03-01">
+                                    ボーナスのルールが厳しい
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    3-2
+                                  </span>
+                                  <a href="#article03-02">日本語サポートの質</a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    3-3
+                                  </span>
+                                  <a href="#article03-03">出金方法の表示</a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    3-4
+                                  </span>
+                                  <a href="#article03-04">
+                                    プレミアム口座の利用条件が厳しい
+                                  </a>
+                                </li>
+                              </ol>
+                            </li>
+                          </div>
+                          <div className={styles.agendaOptionBox}>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>4</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article04"
+                                >
+                                  Vantage Tradingで取引を始める前に
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-3
-                                </span>
-                                <a href="#article02-03">
-                                  約定力に優れる取引サーバー
+                              </div>
+                              <ol>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    4-1
+                                  </span>
+                                  <a href="#article04-01">
+                                    デモ口座でトレードを体験
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    4-2
+                                  </span>
+                                  <a href="#article04-02">
+                                    Vantage Tradingで利用できる入出金方法を確認
+                                  </a>
+                                  <ul style={{listStyle:"none"}}>
+                                    <li>
+                                      <span className={styles.numberMenuSub}>
+                                        4-2-1
+                                      </span>
+                                      <a href="#article04-02-01">
+                                        Vantage Tradingの入金方法
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <span className={styles.numberMenuSub}>
+                                        4-2-2
+                                      </span>
+                                      <a href="#article04-02-02">
+                                        Vantage Tradingの出金方法
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </li>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>5</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article05"
+                                >
+                                  Vantage Tradingの総評
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-4
-                                </span>
-                                <a href="#article02-04">
-                                  取引可能な銘柄数は海外FXブローカーの中でもトップクラス
+                              </div>
+                            </li>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>6</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article06"
+                                >
+                                  Vantage Trading（ヴァンテージ）詳細情報
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-5
-                                </span>
-                                <a href="#article02-05">
-                                  スキャルピングやEAの制限がなく、ストップレベルもゼロ
+                              </div>
+                              <ol>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    6-1
+                                  </span>
+                                  <a href="#article06-01">運営会社情報</a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    6-2
+                                  </span>
+                                  <a href="#article06-02">
+                                    日本語の対応とサポートデスク
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    6-3
+                                  </span>
+                                  <a href="#article06-03">
+                                    お取引条件と預け金の保全ルール
+                                  </a>
+                                </li>
+                                <li>
+                                  <span className={styles.numberMenuSub}>
+                                    6-4
+                                  </span>
+                                  <a href="#article06-04">
+                                    口座のタイプごとの条件
+                                  </a>
+                                </li>
+                              </ol>
+                            </li>
+                            <li className={styles.agendaOptionItem}>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <div className={styles.numberMenu}>7</div>
+                                <a
+                                  style={{ fontWeight: 700 }}
+                                  href="#article07"
+                                >
+                                  Vantage Trading - よくある質問（FAQ）
                                 </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-6
-                                </span>
-                                <a href="#article02-06">
-                                  独自プラットフォーム「ProTrader」を利用可能
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-7
-                                </span>
-                                <a href="#article02-07">
-                                  プレミアム口座は2,000倍のレバレッジが利用できる
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  2-8
-                                </span>
-                                <a href="#article02-08">
-                                  Vポイントという独自プログラム
-                                </a>
-                              </li>
-                            </ol>
-                          </li>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>3</span>
-                              <a href="#article03">
-                                Vantage Tradingの悪い評判やデメリット
-                              </a>
-                            </p>
-                            <ol>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  3-1
-                                </span>
-                                <a href="#article03-01">
-                                  ボーナスのルールが厳しい
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  3-2
-                                </span>
-                                <a href="#article03-02">日本語サポートの質</a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  3-3
-                                </span>
-                                <a href="#article03-03">出金方法の表示</a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  3-4
-                                </span>
-                                <a href="#article03-04">
-                                  プレミアム口座の利用条件が厳しい
-                                </a>
-                              </li>
-                            </ol>
-                          </li>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>4</span>
-                              <a href="#article04">
-                                Vantage Tradingで取引を始める前に
-                              </a>
-                            </p>
-                            <ol>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  4-1
-                                </span>
-                                <a href="#article04-01">
-                                  デモ口座でトレードを体験
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  4-2
-                                </span>
-                                <a href="#article04-02">
-                                  Vantage Tradingで利用できる入出金方法を確認
-                                </a>
-                                <ul>
-                                  <li>
-                                    <span className={styles.numberMenuSub}>
-                                      4-2-1
-                                    </span>
-                                    <a href="#article04-02-01">
-                                      Vantage Tradingの入金方法
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <span className={styles.numberMenuSub}>
-                                      4-2-2
-                                    </span>
-                                    <a href="#article04-02-02">
-                                      Vantage Tradingの出金方法
-                                    </a>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ol>
-                          </li>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>5</span>
-                              <a href="#article05">Vantage Tradingの総評</a>
-                            </p>
-                          </li>
-                          <li>
-                            <p>
-                              <a href="#article06">
-                                <span className={styles.numberMenu}>6</span>
-                                Vantage Trading（ヴァンテージ）詳細情報
-                              </a>
-                            </p>
-                            <ol>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  6-1
-                                </span>
-                                <a href="#article06-01">運営会社情報</a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  6-2
-                                </span>
-                                <a href="#article06-02">
-                                  日本語の対応とサポートデスク
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  6-3
-                                </span>
-                                <a href="#article06-03">
-                                  お取引条件と預け金の保全ルール
-                                </a>
-                              </li>
-                              <li>
-                                <span className={styles.numberMenuSub}>
-                                  6-4
-                                </span>
-                                <a href="#article06-04">
-                                  口座のタイプごとの条件
-                                </a>
-                              </li>
-                            </ol>
-                          </li>
-                          <li>
-                            <p>
-                              <span className={styles.numberMenu}>7</span>
-                              <a href="#article07">
-                                Vantage Trading - よくある質問（FAQ）
-                              </a>
-                            </p>
-                          </li>
+                              </div>
+                            </li>
+                          </div>
                         </ol>
                       </div>
                     </div>
                     <section>
                       <div className={styles.textLayoutWide}>
-                        <div>
-                          <h2 id="article01" className={styles.typeArticle}>
-                            Vantage TradingとはどんなFX会社？
-                          </h2>
-                        </div>
+                        <h2 id="article01" className={styles.typeArticle}>
+                          1. Vantage TradingとはどんなFX会社？
+                        </h2>
                       </div>
                       <div className={styles.textLayoutWide}>
                         <div style={{ padding: "0px 10px" }}>
@@ -780,47 +810,40 @@ export default function Home() {
                             style={{ width: "100%", height: "100%" }}
                           />
                         </div>
-                        <p className={styles.textLayoutWide}>
-                          <a href="!#" target="_blank">
-                            <span className={styles.tUl}>Vantage Trading</span>
-                          </a>
-                          （ヴァンテージ）は、
-                          2009年にオーストラリアで設立された海外FX業者です。
-                        </p>
-                        <p className={styles.textLayoutWide}>
-                          日本向けサービスは2020年7月からスタートしましたが、2020年12月にオーストラリアの金融機関を取り締まった
-                          <span className={styles.tUl}>ASIC</span>
-                          規制などの影響もあり、一時的に日本人利用者の新規口座開設を停止していました。
-                        </p>
-                        <p className={styles.textLayoutWide}>
-                          しかし、Vantageでトレードしたいという声の高まりに応え、2022年8月に日本人顧客向けにサービスを再開しました。
-                        </p>
-                        <p className={styles.textLayoutWide}>
-                          Vantageは、狭い
-                          <span className={styles.tUl}>スプレッド</span>
-                          に高い
-                          <a href="!#">
-                            <span className={styles.tUl}>約定力</span>
-                          </a>
-                          、魅力的な取引手数料による取引スペック面と、ボーナスや取引ツールなどのサービス面を両立しています。既に人気のある海外FXブローカーに引けを取らないスペックによって、今後人気を高めていくことでしょう。
-                        </p>
+                        <div className={styles.textLayoutBox}>
+                          <p className={styles.textLayoutCommon}>
+                            <p>Vantage Trading</p>
+                            <p>
+                              （ヴァンテージ）は、2009年にオーストラリアで設立された海外FX業者です。
+                            </p>
+                          </p>
+                          <p className={styles.textLayoutCommon}>
+                            日本向けサービスは2020年7月からスタートしましたが、2020年12月にオーストラリアの金融機関を取り締まったASIC規制などの影響もあり、一時的に日本人利用者の新規口座開設を停止していました。
+                          </p>
+                          <p className={styles.textLayoutCommon}>
+                            しかし、Vantageでトレードしたいという声の高まりに応え、2022年8月に日本人顧客向けにサービスを再開しました。
+                          </p>
+                          <p className={styles.textLayoutCommon}>
+                            Vantageは、狭いスプレッドに高い約定力、魅力的な取引手数料による取引スペック面と、ボーナスや取引ツールなどのサービス面を両立しています。既に人気のある海外FXブローカーに引けを取らないスペックによって、今後人気を高めていくことでしょう。
+                          </p>
+                        </div>
                         <h3
                           id="article01-01"
                           className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                         >
                           Vantage Tradingの信頼性と安全性
                         </h3>
-                        <p className={styles.textLayoutWide}>
+                        <div className={`${styles.styleLabel} ${styles.marginCommon}`}>
                           Vantage
                           Trading（ヴァンテージ）は、グループ全体で複数の金融ライセンスを保有しています。
-                        </p>
-                        <h4 className={styles.textLayoutWide}>
+                        </div>
+                        <h4 className={styles.styleLabelBold}>
                           Vantegeの保有する金融ライセンス一覧
                         </h4>
                         <div
                           className={`${styles.tableCommon01} ${styles.textLayoutWide}`}
                         >
-                          <table>
+                          <table className={styles.tableBgColor}>
                             <thead>
                               <tr>
                                 <td className={styles.bgColorGreen03}>
@@ -836,50 +859,46 @@ export default function Home() {
                             </thead>
                             <tbody>
                               <tr>
-                                <td className={styles.bgColorGray04}>
+                                <td className={`${styles.bgColorGray04} ${styles.center}`}>
                                   Vantage Global Prime LLP
                                 </td>
-                                <td>英国金融行動監視機構（FCA）</td>
-                                <td>590299</td>
+                                <td className={styles.center}>英国金融行動監視機構（FCA）</td>
+                                <td className={styles.center}>590299</td>
                               </tr>
                               <tr>
-                                <td className={styles.bgColorGray04}>
+                                <td className={`${styles.bgColorGray04} ${styles.center}`}>
                                   Vantage Global Limited
                                 </td>
-                                <td>バヌアツ金融サービス委員会（VFSC）</td>
-                                <td>700271</td>
+                                <td className={styles.center}>バヌアツ金融サービス委員会（VFSC）</td>
+                                <td className={styles.center}>700271</td>
                               </tr>
                               <tr>
-                                <td className={styles.bgColorGray04}>
+                                <td className={`${styles.bgColorGray04} ${styles.center}`}>
                                   Vantage International Group Limited
                                 </td>
-                                <td>ケイマン諸島金融庁（CIMA）</td>
-                                <td>1383491</td>
+                                <td className={styles.center}>ケイマン諸島金融庁（CIMA）</td>
+                                <td className={styles.center}>1383491</td>
                               </tr>
                               <tr>
-                                <td className={styles.bgColorGray04}>
+                                <td className={`${styles.bgColorGray04} ${styles.center}`}>
                                   Vantage Global Prime Pty Ltd
                                 </td>
-                                <td>オーストラリア証券投資委員会（ASIC）</td>
-                                <td>428901</td>
+                                <td className={styles.center}>オーストラリア証券投資委員会（ASIC）</td>
+                                <td className={styles.center}>428901</td>
                               </tr>
                               <tr>
-                                <td className={styles.bgColorGray04}>
+                                <td className={`${styles.bgColorGray04} ${styles.center}`}>
                                   Vantage Markets
                                 </td>
-                                <td>南アフリカ金融行動監視機構（FSCA）</td>
-                                <td>51268</td>
+                                <td className={styles.center}>南アフリカ金融行動監視機構（FSCA）</td>
+                                <td className={styles.center}>51268</td>
                               </tr>
                             </tbody>
                           </table>
-                          <p className={styles.textLayoutWide}>
-                            中でもイギリスのFCAやオーストラリアのASICのライセンスは基準が厳しく、
-                            <span className={styles.markerHalfYellow}>
-                              特に信頼性の高い金融ライセンス
-                            </span>
-                            ですので、グループ全体で見れば安全性が高いと言えます。
+                          <p className={styles.styleLabel}>
+                            中でもイギリスのFCAやオーストラリアのASICのライセンスは基準が厳しく、<span className={styles.FcGreen}>特に信頼性の高い金融ライセンス</span>を使い続けることができます。
                           </p>
-                          <p className={styles.textLayoutWide}>
+                          <p className={styles.styleLabel}>
                             ただし、日本に対してサービス展開を行っている「Vantage
                             Trading」では現在金融ライセンスを公開していません。ユーザーにとって不安材料になりかねないため、いち早い公開が望まれます。
                           </p>
@@ -889,49 +908,45 @@ export default function Home() {
                           >
                             顧客の資産保護にも優れている
                           </h3>
-                          <p className={styles.textLayoutWide}>
+                          <p
+                            className={`${styles.styleLabel} ${styles.textLayoutWide}`}
+                          >
                             Vantage Trading（ヴァンテージ）は、
                             <span className={styles.FcGreen}>
                               海外FXブローカーの中でも特に資産の安全性
                             </span>
-                            が高いと言えます。
+                            <span style={{ color: "#333333", fontWeight: 700 }}>
+                              が高いと言えます。
+                            </span>
                           </p>
-                          <p className={styles.textLayoutWide}>
+                          <p className={styles.styleLabel}>
                             Vantageでは顧客から預かった資産を、信頼性の高い一流の外部金融機関で分別管理を行っています。Vantageの運転資金とは完全に分離して管理されているため、万が一の際も持ち逃げするといったことはできません。
                           </p>
-                          <p
-                            className={`${styles.btnWeb02} ${styles.textLayoutWide}`}
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
                           >
                             <a
                               href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                               target="_blank"
+                              className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                             >
-                              <span className="flexCommon01 flexCenter flexMiddle">
-                                <span>
-                                  Vantage 口座開設ページ
-                                  <span className="dispNonePU">を開く</span>
-                                </span>
-                                <span className="pl10">
-                                  <Image
-                                    src={icon_blank01}
-                                    alt="blank"
-                                    style={{
-                                      transform: "translateY(6px)",
-                                      marginLeft: 10,
-                                    }}
-                                  />
-                                </span>
-                              </span>
+                              Vantage 口座開設ページを開く
                             </a>
-                          </p>
+                          </div>
                         </div>
                       </div>
                     </section>
                     <section className={styles.wrapperSection}>
                       <div className={styles.textLayoutWide}>
                         <div>
-                          <h2 id="article02" className={styles.typeArticle02}>
-                            Vantage Tradingの良い評判やメリット
+                          <h2
+                            id="article02"
+                            className={`${styles.styleTitleCommon} ${styles.textLayoutWide} ${styles.center}`}
+                          >
+                            2. Vantage Tradingの良い評判やメリット
                           </h2>
                           <h3
                             id="article02-01"
@@ -939,12 +954,12 @@ export default function Home() {
                           >
                             ハイスペックな取引条件
                           </h3>
-                          <p className={styles.textLayoutWide}>
+                          <div className={styles.styleLabel}>
                             <a
                               href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                               target="_blank"
                             >
-                              <span className={`${styles.tUl}`}>
+                              <span className={`${styles.tUl}`} style={{textDecoration: "underline"}}>
                                 Vantage Trading
                               </span>
                             </a>
@@ -953,43 +968,33 @@ export default function Home() {
                               優れた取引コストに最大1,000倍のレバレッジを設定するなど、ハイスペックな取引条件を提供
                             </span>
                             しています。
-                          </p>
-                          <p className={styles.textLayoutWide}>
+                          </div>
+                          <div className={styles.styleLabel}>
                             Vantageの低スプレッド口座である「ECN口座」と、他社ブローカーの低スプレッド口座の取引コストを比較してみました。
-                          </p>
-                          <h4
-                            className={`${styles.textLayoutWide} ${styles.hStyle06}`}
-                          >
+                          </div>
+                          <div className={`${styles.styleLabel}`}>
                             取引コスト（平均スプレッド＋取引手数料）比較
-                          </h4>
+                          </div>
                           <div
                             className={styles.tableCommon01}
-                            style={{ marginTop: 15 }}
+                            style={{ marginTop: 30 }}
                           >
                             <table>
                               <thead>
                                 <tr>
-                                  <td
-                                    className={styles.bgColorGreen03}
-                                    style={{ fontSize: 14 }}
-                                  >
+                                  <td className={styles.bgColorGreen03}>
                                     ブローカー名
                                   </td>
-                                  <td
-                                    className={styles.bgColorGreen03}
-                                    style={{ fontSize: 14 }}
-                                  >
+                                  <td className={styles.bgColorGreen03}>
                                     EURUSD
                                   </td>
                                   <td
                                     className={`${styles.bgColorGreen03} ${styles.isDesktop}`}
-                                    style={{ fontSize: 14 }}
                                   >
                                     USDJPY
                                   </td>
                                   <td
                                     className={`${styles.bgColorGreen03} ${styles.isDesktop}`}
-                                    style={{ fontSize: 14 }}
                                   >
                                     EURJPY
                                   </td>
@@ -1018,18 +1023,16 @@ export default function Home() {
                                       </div>
                                     </a>
                                   </td>
+                                  <td className={`${styles.center}`}>
+                                    1.1pips
+                                  </td>
                                   <td
-                                    className={`${styles.bgColorYellow01} ${styles.center}`}
+                                    className={`${styles.center} ${styles.isDesktop}`}
                                   >
                                     1.1pips
                                   </td>
                                   <td
-                                    className={`${styles.bgColorYellow01} ${styles.center} ${styles.isDesktop}`}
-                                  >
-                                    1.1pips
-                                  </td>
-                                  <td
-                                    className={`${styles.bgColorYellow01} ${styles.center} ${styles.isDesktop}`}
+                                    className={`${styles.center} ${styles.isDesktop}`}
                                   >
                                     1.3pips
                                   </td>
@@ -1392,34 +1395,37 @@ export default function Home() {
                               </tbody>
                             </table>
                           </div>
-                          <p>
+                          <div
+                            className={styles.styleLabel}
+                            style={{ marginTop: "30px" }}
+                          >
                             Titan FX（タイタン FX）や
                             <span className={styles.tUl}>Exness</span>
                             （エクスネス）といった、特に取引コストが優れているとされるブローカーと比較しても遜色ないことが分かります。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             また、Vantageの最大
                             <span className={styles.tUl}>レバレッジ</span>
                             は1,000倍と平均より少し上程度の水準ですが、レバレッジ制限後も500倍のレバレッジを利用可能なことが利点です。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             海外FXブローカーでは一般的、口座残高によるレバレッジ制限があり、高額の口座残高になると100倍程度にレバレッジ制限されることが多くあります。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             一方Vantageでは、100万円以上の残高で一度500倍に制限がかかるだけで、その後
                             <span className={styles.markerHalfYellow}>
                               どれだけ口座残高が増えても500倍のレバレッジ
                             </span>
                             を使い続けることができます。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             上記はECN口座を例としましたが、
                             <span className={styles.markerHalfYellow}>
                               スタンダード口座のスプレッド
                             </span>
                             も他に見劣りしないレベルのスプレッドを提供しています。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             スプレッドに関しては、
                             <span
                               className={`${styles.FcGreen} ${styles.bold}`}
@@ -1427,34 +1433,34 @@ export default function Home() {
                               Vantageを利用する大きなメリット
                             </span>
                             のひとつと言えるでしょう。
-                          </p>
+                          </div>
                           <h3
                             id="article02-02"
                             className={`${styles.hStyle03}  ${styles.textLayoutWide}`}
                           >
                             豪華な入金ボーナスを実施
                           </h3>
-                          <p>
+                          <div className={styles.styleLabel}>
                             豪華なボーナスは海外FXの魅力の1つですが、取引環境を優先するブローカーではボーナスを提供しないケースも多々あります。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             しかし、Vantage Trading（ヴァンテージ）では、
                             <span className={styles.FcGreen}>
                               優良な取引環境を提供しながらも、他社に見劣りしないボーナスを提供
                             </span>
                             していることがメリットです。2024年8月現在、Vantageでは以下のボーナスキャンペーンを開催しています。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             Vantageが提供しているボーナスは、
                             <span className={styles.markerHalfYellow}>
                               口座開設ボーナスと入金ボーナスの2種類
                             </span>
                             です。初めて口座を開設する方は、両方のボーナスを受け取れる今がトレードを始めるチャンスと言えます。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             口座開設ボーナスは、Vantageの新規ユーザーが、口座開設完了した際にもらえるボーナスです。入金することなくボーナスを貰い、ボーナスのみでVantageの取引ができます。もちろん口座開設ボーナスを利用して発生した利益は出金可能です。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             また口座開設ボーナスは登録から1週間以内に本人確認（書類認証）を完了することで、ボーナス額が
                             <span className={styles.markerHalfYellow}>
                               10,000円から15,000円にアップ
@@ -1464,87 +1470,98 @@ export default function Home() {
                               100％から120％へアップ
                             </span>
                             します。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             お得にボーナス額がアップするのでぜひ利用しましょう。
-                          </p>
+                          </div>
                           <h4
-                            className={`${styles.hStyle06} ${styles.textLayoutWide}`}
+                            className={`${styles.styleLabel} ${styles.textLayoutWide} `}
                           >
                             Vantageの口座開設ボーナスキャンペーン
                           </h4>
                           <div className={styles.paddingCommon20A}>
-                            <ol className={styles.ul05}>
-                              <li>登録から1週間以内に本人確認完了：15,000円</li>
-                              <li style={{ marginTop: 10 }}>
-                                登録から1週間経過以降に本人確認完了：10,000円
-                              </li>
-                            </ol>
+                            <li className={styles.styleTitleOption}>
+                              登録から1週間以内に本人確認完了：15,000円
+                            </li>
+                            <li
+                              className={styles.styleTitleOption}
+                              style={{ marginTop: 10 }}
+                            >
+                              登録から1週間経過以降に本人確認完了：10,000円
+                            </li>
                           </div>
                           <h4
-                            className={`${styles.hStyle06} ${styles.textLayoutWide}`}
+                            className={`${styles.styleLabel} ${styles.textLayoutWide}`}
                           >
                             Vantageの入金ボーナスキャンペーン（※）
                           </h4>
                           <div className={styles.paddingCommon20A}>
-                            <ol className={styles.ul05}>
-                              <li>登録から1週間以内の入金：120％</li>
-                              <li style={{ marginTop: 10 }}>
-                                登録から1週間経過以降に入金：100％
-                              </li>
-                            </ol>
+                            <li className={styles.styleTitleOption}>
+                              登録から1週間以内の入金：120％
+                            </li>
+                            <li
+                              className={styles.styleTitleOption}
+                              style={{ marginTop: 10 }}
+                            >
+                              登録から1週間経過以降に入金：100％
+                            </li>
                           </div>
-                          <p className={`${styles.FcRed}`}>
+                          <p className={`${styles.styleLabel} ${styles.FcRed}`}>
                             （※）初回入金ボーナス（受取上限額は75,000円）
                           </p>
-                          <p>
+                          <div className={styles.styleLabel}>
                             登録から1週間以内の入金でボーナス額がアップするのは初回入金時のみなのでご注意ください。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             2回目入金ボーナスは50％（受取上限額は150,000円）、3回目以降入金ボーナスは20％（受取上限額は1,275,000円）となります。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             ボーナスについて、詳細は以下の記事をご参照ください。
-                          </p>
+                          </div>
                           <h3
                             id="article02-03"
                             className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                           >
                             約定力に優れる取引サーバー
                           </h3>
-                          <p>
+                          <div className={styles.styleLabel}>
                             Vantage
                             Trading（ヴァンテージ）は、大手金融機関や世界の名だたる企業が利用している
                             <span className={styles.markerHalfYellow}>
                               「Eqinix社」のデータセンター
                             </span>
                             を金融インフラに採用しています。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             Eqinix社は、高い信頼性と安定したサーバーを世界各国に配置しており、高速通信によるスムーズな約定が可能です。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             また、Vantageでは、複数の大手
                             <span className={styles.tUl}>
                               リクイディティ・プロバイダ
                             </span>
                             （LP）と契約しており、高い流動性を確保し、注文のマッチング率を向上しています。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             これにより、掲示される価格レートがトレーダーに有利になりやすく、約定拒否やスリッページが起こりにくいことが利点です。
-                          </p>
+                          </div>
                           <div className={styles.textLayoutWide}>
-                            <div className={styles.point01Name03}>
-                              <div>
-                                <span className={styles.point01Name01Item}>
-                                  リクイディティ・プロバイダとは
-                                </span>
-                              </div>
+                            <div
+                              style={{ display: "flex", alignItems: "center" }}
+                            >
+                              <img
+                                className={styles.point_icon}
+                                src="icon_copy.webp"
+                                alt="img"
+                              />
+                              <span className={styles.point01Name03Item}>
+                                リクイディティ・プロバイダとは
+                              </span>
                             </div>
-                            <div className={styles.point01Txt03}>
-                              <p>
-                                リクイディティ・プロバイダとは、市場に流動性を提供する金融機関のことです。FX取引においては、FXブローカーに価格レートを提示する役割も持ちます。FXブローカーはリクイディティプロバイダーに提示された価格のうち最も有利な価格を顧客に提供します。
-                              </p>
+                            <div
+                              className={`${styles.point01Txt03} ${styles.styleLabel}`}
+                            >
+                              リクイディティ・プロバイダとは、市場に流動性を提供する金融機関のことです。FX取引においては、FXブローカーに価格レートを提示する役割も持ちます。FXブローカーはリクイディティプロバイダーに提示された価格のうち最も有利な価格を顧客に提供します。
                             </div>
                           </div>
                           <h3
@@ -1553,17 +1570,19 @@ export default function Home() {
                           >
                             取引可能な銘柄数は海外FXブローカーの中でもトップクラス
                           </h3>
-                          <p>
+                          <div className={styles.styleLabel}>
                             Vantage Trading（ヴァンテージ）では、
                             <span className={styles.markerHalfYellow}>
                               1,000種類以上の銘柄
                             </span>
                             を取り扱っており、海外FXブローカーの中でもトップクラスです。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             取引銘柄が豊富な他ブローカーとの銘柄数比較は以下の通りです。
-                          </p>
-                          <h4 className={styles.textLayoutWide}>
+                          </div>
+                          <h4
+                            className={`${styles.styleLabel} ${styles.marginCommon}`}
+                          >
                             取引銘柄数の多いブローカーの銘柄数
                           </h4>
                           <div
@@ -1667,45 +1686,48 @@ export default function Home() {
                               </tbody>
                             </table>
                           </div>
-                          <p>
+                          <div
+                            className={styles.styleLabel}
+                            style={{ marginTop: "40px" }}
+                          >
                             銘柄数の多さが高い評価を受けているブローカーと比較しても、全く見劣りしないことがわかります。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             Vantageでは
                             <span className={styles.markerHalfYellow}>
                               特に株式銘柄が豊富
                             </span>
                             です。米国、豪州、欧州の個別株を、成長株からバリュー株まで幅広く取引できます。
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleLabel}>
                             また、仮想通貨銘柄の種類が多く、他社より高いレバレッジを利用できるのもメリットです。通常レバレッジが50倍程度に制限されることが多い
                             <span className={styles.FcGreen}>
                               ビットコイン、イーサリアムに、200倍のハイレバレッジをかけることができます。
                             </span>
-                          </p>
+                          </div>
                           <h3
                             id="article02-05"
                             className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                           >
                             スキャルピングやEAの制限がなく、ストップレベルもゼロ
                           </h3>
-                          <p>
+                          <div className={styles.styleLabel}>
                             Vantage Trading（ヴァンテージ）は
                             <span className={styles.FcGreen}>
                               EAやスキャルピングなどに制限を設けていないため、自由度の高い取引がメリット
                             </span>
                             です。Vantageではあらゆるトレードスタイルに対応することができます。
-                          </p>{" "}
+                          </div>{" "}
                         </div>
                         <div className={`${styles.caution01}`}>
-                          <p className={`${styles.sizeCommon11}`}>
+                          <div className={`${styles.sizeCommon11}`}>
                             両建てに関しては同一口座内でのみ可能
-                          </p>
-                          <p>
+                          </div>
+                          <div className={styles.styleTitleOption}>
                             両建てに関しては同一口座内でのみ可能です。多くの海外FXブローカーで禁止されている異なる口座間での両建てや、他のブローカーとの両建ては禁止されているため、注意しましょう。
-                          </p>
+                          </div>
                         </div>
-                        <p>
+                        <div className={styles.styleLabel}>
                           またVantageでは、FX通貨における予約注文時にレートの制限がかかる
                           <span className={styles.markerHalfYellow}>
                             ストップレベルが0
@@ -1713,19 +1735,24 @@ export default function Home() {
                           に設定されています。指値注文や逆指値注文時に一定のレートを離す必要が無いため、細かな値動きから利益を狙う
                           <span className={styles.tUl}>スキャルピング</span>
                           が行いやすいことが利点です。
-                        </p>
+                        </div>
                         <div className={styles.textLayoutWide}>
-                          <div className={styles.point01Name03}>
-                            <div>
-                              <span className={styles.point01Name01Item}>
-                                ストップレベルとは？
-                              </span>
-                            </div>
+                          <div
+                            style={{ display: "flex", alignItems: "center" }}
+                          >
+                            <img
+                              className={styles.point_icon}
+                              src="icon_copy.webp"
+                              alt="img"
+                            />
+                            <span className={styles.point01Name03Item}>
+                              ストップレベルとは？
+                            </span>
                           </div>
-                          <div className={styles.point01Txt03}>
-                            <p>
-                              ストップレベルとは、指値・逆指値などの予約注文を行う際に、現在の価格レートから離さなければならない値幅のことです。ストップレベルがあることにより、予約注文時の現在価格と注文・決済価格に差が生じ、トレードに制約が生まれます。
-                            </p>
+                          <div
+                            className={`${styles.point01Txt03} ${styles.styleLabel}`}
+                          >
+                            ストップレベルとは、指値・逆指値などの予約注文を行う際に、現在の価格レートから離さなければならない値幅のことです。ストップレベルがあることにより、予約注文時の現在価格と注文・決済価格に差が生じ、トレードに制約が生まれます。
                           </div>
                         </div>
                         <h3
@@ -1734,57 +1761,57 @@ export default function Home() {
                         >
                           独自プラットフォーム「ProTrader」を利用可能
                         </h3>
-                        <p>
+                        <div className={styles.styleLabel}>
                           Vantage Trading（ヴァンテージ）では、
                           <span className={styles.tUl}>
                             取引プラットフォーム
                           </span>
                           としてVantageアプリ、MetaTrader4（MT4）/
                           MetaTrader5（MT5）、独自ツールである「ProTrader」が利用可能です。
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           ProTraderは高いカスタマイズ性が好評を受ける「TradingView」製のチャートを内蔵しており、
                           <span className={styles.FcGreen}>
                             種類の多い時間枠、豊富なインジケーター・オブジェクトを駆使して、ウェブ上で詳細なテクニカル分析ができます。
                           </span>
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           ProTraderはVantageに200ドルの入金を行い、クライアントポータルから利用申請すると、クライアントポータルにProTraderツールが表示されるようになります。
-                        </p>
+                        </div>
                         <h3
                           id="article02-07"
                           className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                         >
                           プレミアム口座は2,000倍のレバレッジが利用できる
                         </h3>
-                        <p>
+                        <div className={styles.styleLabel}>
                           Vantage
                           Trading（ヴァンテージ）で最も注目の口座が、プレミアム口座です。利用できるプラットフォームはMT4のみと限られていますが、
                           <span className={styles.markerHalfYellow}>
                             最大レバレッジ2,000倍、ロスカット水準0%で取引可能なハイスペック口座タイプ
                           </span>
                           です。
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           初回最低入金額は3,000ドルと高額ですが、極めて狭いスプレッドと自由度の高い取引環境でトレード可能なため、資金に余裕のある方はプレミアム口座の利用がおすすめです。
-                        </p>
+                        </div>
                         <h3
                           id="article02-08"
                           className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                         >
                           Vポイントという独自プログラム
                         </h3>
-                        <p>
+                        <div className={styles.styleLabel}>
                           Vantage Trading（ヴァンテージ）では
                           <span className={styles.markerHalfYellow}>
                             Vポイント
                           </span>
                           という独自のポイントプログラムを提供しています。
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           ポイントはリアル口座での取引や、ミッションを完了することによって獲得することができ、ゲーム感覚でポイントを貯めることができます。
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           貯まったVポイントは取引に利用できる
                           <span className={styles.FcGreen}>
                             ボーナスとして交換
@@ -1794,42 +1821,28 @@ export default function Home() {
                             他にはない楽しみ方
                           </span>
                           ができます。
-                        </p>
-                        <p>
+                        </div>
+                        <div className={styles.styleLabel}>
                           VポイントプログラムもVantageを利用する上で、メリットであると言ってよいでしょう。
-                        </p>
-                        <p
-                          className={`${styles.btnWeb02} ${styles.textLayoutWide}`}
+                        </div>
+                        <div
+                          style={{ display: "flex", justifyContent: "center" }}
                         >
                           <a
                             href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                             target="_blank"
+                            className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                           >
-                            <span className="flexCommon01 flexCenter flexMiddle">
-                              <span>
-                                Vantage 口座開設ページ
-                                <span className="dispNonePU">を開く</span>
-                              </span>
-                              <span className="pl10">
-                                <Image
-                                  src={icon_blank01}
-                                  alt="blank"
-                                  style={{
-                                    transform: "translateY(6px)",
-                                    marginLeft: 10,
-                                  }}
-                                />
-                              </span>
-                            </span>
+                            Vantage 口座開設ページを開く
                           </a>
-                        </p>
+                        </div>
                       </div>
                     </section>
                     <section
                       className={`${styles.textLayoutWide} ${styles.wrapperSection}`}
                     >
                       <h2 id="article03" className={styles.typeArticle03}>
-                        Vantage Tradingの悪い評判やデメリット
+                        3. Vantage Tradingの悪い評判やデメリット
                       </h2>
                       <h3
                         className={`${styles.hStyle03} ${styles.textLayoutWide}`}
@@ -1837,33 +1850,36 @@ export default function Home() {
                       >
                         ボーナスのルールが厳しい
                       </h3>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage Trading（ヴァンテージ）のボーナスには
                         <span className={styles.markerHalfYellow}>注意点</span>
                         がいくつかあります。場合によっては付与されるつもりでいたボーナスが付与されなかった、ということにもなり得ますので、こちらはしっかりと理解してから利用しましょう。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         規約違反はボーナス消滅等の厳しい措置となる可能性もあるため、規約はよく読み、同一口座内でのポジション両建て等も控えておいた方が良いでしょう。
-                      </p>
-                      <h4 className={styles.textLayoutWide}>
+                      </div>
+                      <h3
+                        className={styles.styleLabelBold}
+                        style={{ marginTop: "40px" }}
+                      >
                         ボーナス利用時の注意点
-                      </h4>
+                      </h3>
                       <div
                         className={styles.paddingCommon20A}
                         style={{ marginTop: 10 }}
                       >
-                        <ol className={styles.ul05}>
-                          <li>適用は新規入金のみ（資金移動は適用外）</li>
-                          <li style={{ marginTop: 15 }}>
-                            国内銀行送金での最低入金額は50,000円
-                          </li>
-                          <li style={{ marginTop: 15 }}>
-                            仮想通貨入金はボーナス付与対象外
-                          </li>
-                          <li style={{ marginTop: 15 }}>
-                            利益出金時は出金額と同じ割合でクレジットが消滅
-                          </li>
-                        </ol>
+                        <li className={styles.styleLabe500}>
+                          適用は新規入金のみ（資金移動は適用外）
+                        </li>
+                        <li className={styles.styleLabe500}>
+                          国内銀行送金での最低入金額は50,000円
+                        </li>
+                        <li className={styles.styleLabe500}>
+                          仮想通貨入金はボーナス付与対象外
+                        </li>
+                        <li className={styles.styleLabe500}>
+                          利益出金時は出金額と同じ割合でクレジットが消滅
+                        </li>
                       </div>
                       <h3
                         className={`${styles.hStyle03} ${styles.textLayoutWide}`}
@@ -1871,57 +1887,57 @@ export default function Home() {
                       >
                         日本語サポートの質が微妙
                       </h3>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage
                         Trading（ヴァンテージ）ではメール、ライブチャットでの日本語サポートを提供しています。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         しかし、こちらの聞きたい内容にきちんと回答してもらえなかったり、
                         <span className={styles.FcGreen}>
                           オペレーターの対応に難があったり
                         </span>
                         ということがありますので、利用の際はご注意ください。
-                      </p>
+                      </div>
                       <h3
                         className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                         id="article03-03"
                       >
                         出金方法の表示
                       </h3>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage
                         Trading（ヴァンテージ）では入出金方法として、国内銀行送金、仮想通貨（BTC・ETH・USDT（ERC20、TRC20）・USDC（ERC20）・XRP）、クレジットカード
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         （JCB、VISA、MASTER、AMERICANEXPRESS）、bitwalletと
                         <span className="markerHalfYellow">多彩に用意</span>
                         されています。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         出金も同じ方法で可能ですが、
                         <span className={styles.FcGreen}>
                           入金実績がないと表示されない方法がある
                         </span>
                         点には注意が必要です。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         また、クレジットカードでの出金は入金額までの返金扱いとなり、入金額以上の出金は他の方法での出金となります。
-                      </p>
+                      </div>
                       <h3
                         className={`${styles.hStyle03} ${styles.textLayoutWide}`}
                         id="article03-04"
                       >
                         3-4.プレミアム口座の利用条件が厳しい
                       </h3>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage
                         Trading（ヴァンテージ）のプレミアム口座はその名の通り、他の口座タイプとは差別化された
                         <span className={styles.markerHalfYellow}>
                           プレミアムな仕様の特別な口座タイプ
                         </span>
                         です。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         しかし、
                         <span className={styles.FcGreen}>
                           最低入金額が3,000ドル相当額からと高額
@@ -1929,14 +1945,16 @@ export default function Home() {
                         で、利用可能なプラットフォームも
                         <span className={styles.FcGreen}>MT4限定</span>
                         という部分で利用しにくいという点もあります。
-                      </p>
-                      <p>実際に利用する際には注意が必要です。</p>
+                      </div>
+                      <div className={styles.styleLabel}>
+                        実際に利用する際には注意が必要です。
+                      </div>
                     </section>
                     <section
                       className={`${styles.textLayoutWide} ${styles.wrapperSection}`}
                     >
                       <h2 id="article04" className={styles.typeArticle04}>
-                        Vantage Tradingで取引を始める前に
+                        4. Vantage Tradingで取引を始める前に
                       </h2>
                       <h3
                         id="article04-01"
@@ -1944,7 +1962,7 @@ export default function Home() {
                       >
                         デモ口座でトレードを体験
                       </h3>
-                      <p>
+                      <div className={styles.styleLabel}>
                         <a
                           href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                           target="_blank"
@@ -1956,37 +1974,23 @@ export default function Home() {
                           無期限で全ての口座タイプのデモ口座を体感
                         </span>
                         することが可能です。実際に取引してみて、使用感を確かめた上で口座開設を検討するのがよいでしょう。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         デモ口座は、以下のリンクからVantage公式サイトにアクセスして、ページ右上の「
                         <span class="b FcGreen">デモ口座</span>
                         」ボタンから開設できます。
-                      </p>
-                      <p
-                        className={`${styles.btnWeb02} ${styles.textLayoutWide}`}
+                      </div>
+                      <div
+                        style={{ display: "flex", justifyContent: "center" }}
                       >
                         <a
                           href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                           target="_blank"
+                          className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                         >
-                          <span className="flexCommon01 flexCenter flexMiddle">
-                            <span>
-                              Vantage 公式サイト
-                              <span className="dispNonePU">を開く</span>
-                            </span>
-                            <span className="pl10">
-                              <Image
-                                src={icon_blank01}
-                                alt="blank"
-                                style={{
-                                  transform: "translateY(6px)",
-                                  marginLeft: 10,
-                                }}
-                              />
-                            </span>
-                          </span>
+                          Vantage 公式サイトを開く
                         </a>
-                      </p>
+                      </div>
                       <div>
                         <p>
                           <Image
@@ -2004,17 +2008,21 @@ export default function Home() {
                       </h3>
                       <h4
                         id="article04-02-01"
-                        className={`${styles.hStyle04} ${styles.textLayoutWide}`}
+                        className={`${styles.styleLabelBold} ${styles.textLayoutWide}`}
                       >
                         Vantage Tradingの入金方法
                       </h4>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage
                         Trading（ヴァンテージ）では、以下の入金方法を提供しています。
-                      </p>
-                      <h4 className={styles.textLayoutWide}>入金方法一覧</h4>
+                      </div>
+                      <h4
+                        className={`${styles.textLayoutWide} ${styles.styleLabelBold}`}
+                      >
+                        入金方法一覧
+                      </h4>
                       <div
-                        className={styles.tableCommon01}
+                        className={`${styles.tableCommon01} ${styles.mobileTable}`}
                         style={{ marginTop: 15 }}
                       >
                         <table>
@@ -2022,7 +2030,6 @@ export default function Home() {
                             <tr>
                               <td
                                 className={styles.bgColorGreen03}
-                                style={{ width: "35%" }}
                               >
                                 入金方法
                               </td>
@@ -2040,11 +2047,11 @@ export default function Home() {
                                 国内銀行送金
                               </td>
                               <td className={styles.center}>20,000円</td>
-                              <td className={styles.center}>最長1営業日</td>
+                              <td className={`${styles.center} ${styles.colMobile}`}>最長1営業日</td>
                             </tr>
                             <tr>
                               <td
-                                className={`${styles.bgColorGray02} ${styles.center}`}
+                                className={`${styles.bgColorGray02} ${styles.center} ${styles.widthCol}`}
                               >
                                 仮想通貨
                                 <br />
@@ -2074,20 +2081,26 @@ export default function Home() {
                           </tbody>
                         </table>
                       </div>
-                      <p>
+                      <div
+                        className={`${styles.styleLabel} ${styles.marginCommon}`}
+                      >
                         入金方法については豊富な手段に対応しています。いずれの入金方法も入金手数料は無料です。ただし国内銀行送金は20,000円からと少々高額に設定されていることと反映時間も即時ではなく最長1営業日となっているので、国内銀行送金の場合は、時間には余裕を持って入金することをおすすめします。
-                      </p>
+                      </div>
                       <h4
                         id="article04-02-02"
-                        className={`${styles.hStyle04} ${styles.textLayoutWide}`}
+                        className={`${styles.styleLabelBold} ${styles.marginCommon}`}
                       >
                         Vantage Tradingの出金方法
                       </h4>
-                      <p>
+                      <div className={styles.styleLabel}>
                         Vantage
                         Trading（ヴァンテージ）では、以下の出金方法を提供しています。
-                      </p>
-                      <h4>出金方法一覧</h4>
+                      </div>
+                      <h4
+                        className={`${styles.styleLabelBold} ${styles.marginCommon}`}
+                      >
+                        出金方法一覧
+                      </h4>
                       <div
                         className={styles.tableCommon01}
                         style={{ marginTop: 15 }}
@@ -2104,7 +2117,7 @@ export default function Home() {
                               <td className={styles.bgColorGreen03}>
                                 最低出金額
                               </td>
-                              <td className={styles.bgColorGreen03}>
+                              <td className={`${styles.bgColorGreen03} ${styles.colMobile}`}>
                                 反映時間
                               </td>
                             </tr>
@@ -2151,59 +2164,51 @@ export default function Home() {
                           </tbody>
                         </table>
                       </div>
-                      <p>
+                      <div
+                        className={`${styles.styleLabel} ${styles.marginCommon}`}
+                      >
                         入金方法と同じ種類の出金方法が用意されています。ただし、仮想通貨とbitwalletに関しては入金実績がないと出金手段に表示されませんのでご注意ください。クレジットカードで入金した場合は、入金額と同額までは入金したクレジットカードへの返金扱いとなります。また、仮想通貨出金の場合は、別途ネットワーク利用料が発生しますのでご注意ください。
-                      </p>
+                      </div>
                     </section>
                     <section
                       className={`${styles.textLayoutWide} ${styles.wrapperSection}`}
                     >
-                      <h2 id="article05" className={styles.typeArticle05}>
-                        Vantage Tradingの総評
+                      <h2
+                        id="article05"
+                        className={`${styles.typeArticle05} ${styles.marginCommon}`}
+                      >
+                        5. Vantage Tradingの総評
                       </h2>
-                      <p>
+                      <div className={styles.styleLabel}>
                         <a href="!#" target="_blank">
                           <span className={styles.tUl}>Vantage Trading</span>
                         </a>
                         （ヴァンテージ）は、低取引コストに最大2,000倍のレバレッジ、豊富な銘柄によるハイスペックな取引環境を提供しています。さらに入金時の豪華ボーナスも魅力です。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         日本での認知度はまだまだ低いですが、複数の金融ライセンスの保有より安全性はかなり高いと言えます。
-                      </p>
-                      <p>
+                      </div>
+                      <div className={styles.styleLabel}>
                         グローバルブローカーであるVantageが、日本市場に向けてどのような施策をこれから打ち出していくのか、非常に気になるところです。
-                      </p>
-                      <p
-                        className={`${styles.btnWeb02} ${styles.textLayoutWide}`}
+                      </div>
+                      <div
+                        style={{ display: "flex", justifyContent: "center" }}
                       >
                         <a
                           href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                           target="_blank"
+                          className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                         >
-                          <span className="flexCommon01 flexCenter flexMiddle">
-                            <span>
-                              Vantage 公式サイト
-                              <span className="dispNonePU">を開く</span>
-                            </span>
-                            <span className="pl10">
-                              <Image
-                                src={icon_blank01}
-                                alt="blank"
-                                style={{
-                                  transform: "translateY(6px)",
-                                  marginLeft: 10,
-                                }}
-                              />
-                            </span>
-                          </span>
+                          Vantage 公式サイトを開く
                         </a>
-                      </p>
+                      </div>
+                      <div></div>
                     </section>
                     <section
                       className={`${styles.textLayoutWide} ${styles.wrapperSection}`}
                     >
                       <h2 id="article06" className={styles.typeArticle06}>
-                        Vantage Trading（ヴァンテージ）詳細情報
+                        6. Vantage Trading（ヴァンテージ）詳細情報
                       </h2>
                       <h3
                         id="article06-01"
@@ -2219,29 +2224,29 @@ export default function Home() {
                           <tbody>
                             <tr>
                               <td className={styles.bgColorGray02}>会社名</td>
-                              <td className="tlPO" colspan="3">
+                              <td className={styles.center} colspan="3">
                                 Vantage Prime Trading Limited
                               </td>
                             </tr>
                             <tr>
-                              <td className={styles.bgColorGray02}>本店住所</td>
-                              <td className="tlPO" colspan="3">
+                              <td className={`${styles.bgColorGray02} ${styles.center}`}>本店住所</td>
+                              <td className={styles.center} colspan="3">
                                 10 Manoel Street , Castries , St.Lucia
                               </td>
                             </tr>
                             <tr>
-                              <td className={styles.bgColorGray02}>
+                              <td className={`${styles.bgColorGray02} ${styles.center}`}>
                                 金融監督機関
                               </td>
-                              <td className="tlPO" colspan="3">
+                              <td className={styles.center} colspan="3">
                                 非公開
                               </td>
                             </tr>
                             <tr>
                               <td className={styles.bgColorGray02}>創業</td>
-                              <td className="tlPO">2009年</td>
+                              <td className={styles.center}>2009年</td>
                               <td className={styles.bgColorGray02}>資本金</td>
-                              <td className="tlPO">非公開</td>
+                              <td className={styles.center}>非公開</td>
                             </tr>
                           </tbody>
                         </table>
@@ -2594,362 +2599,441 @@ export default function Home() {
                           </tbody>
                         </table>
                       </div>
-                      <p className={`${styles.FcRed} ${styles.note01}`}>
+                      <p className={`${styles.FcRed}`}>
                         （※）1注文（片道）1ロットあたりの手数料となります。なお、取引手数料は取引銘柄によって異なります。
                       </p>
                     </section>
-                    <section className={styles.faqPickupBox}>
+                    <section className={styles.textLayoutWide}>
+                      <div
+                        className={styles.layoutInformation}
+                      >
+                        <div
+                          className={styles.layoutInformationItem}
+                        >
+                          <a
+                            href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                            target="_blank"
+                          >
+                            <div className={styles.btnAccount04}>
+                              <TiTick
+                                style={{ transform: "translateY(3px)" }}
+                                fontSize={40}
+                              />
+                              <span
+                                style={{
+                                  transform: "translateY(-10px)",
+                                  display: "inline-block",
+                                  verticalAlign: "middle",
+                                }}
+                              >
+                                リアル口座開設
+                              </span>
+                            </div>
+                          </a>
+                          <div className={styles.sideRanking01}>
+                            <div className={styles.center}>
+                              <p className={styles.sideText}>海外FX業者</p>
+                              <p className={styles.sideCommonTitle01}>
+                                人気ランキング
+                              </p>
+                            </div>
+                          </div>
+                          <div className={styles.sideRanking01Inner01}>
+                            <ul
+                              className={`${styles.flexCommon01} ${styles.sideRanking01List01}`}
+                            >
+                              <li className={styles.flexCommon01}>
+                                <div className={styles.sideRanking01Icon01}>
+                                  <div className={styles.rankingIcon01Wrap01}>
+                                    <div
+                                      className={`${styles.rankingIcon01} ${styles.typeA}`}
+                                    >
+                                      <span>1</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className={styles.sideRanking01Name01}>
+                                  <a
+                                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                    className="linkNoUnderline01 blk"
+                                    target="_blank"
+                                  >
+                                    <p>
+                                      <Image
+                                        src={logo}
+                                        alt="xem"
+                                        width={110}
+                                        height={30}
+                                        style={{ transform: "translateY(6px)" }}
+                                      />
+                                    </p>
+                                  </a>
+                                </div>
+                                <div className={styles.sideRanking01Rank01}>
+                                  25.50
+                                </div>
+                              </li>
+                              <li className={styles.flexCommon01}>
+                                <div className={styles.sideRanking01Icon01}>
+                                  <div className={styles.rankingIcon01Wrap01}>
+                                    <div
+                                      className={`${styles.rankingIcon01} ${styles.typeA}`}
+                                    >
+                                      <span>2</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className={styles.sideRanking01Name01}>
+                                  <a
+                                    href="https://clicks.affstrack.com/c?c=999173&l=en&p=0"
+                                    className="linkNoUnderline01 blk"
+                                    target="_blank"
+                                  >
+                                    <p>
+                                      <Image
+                                        src={broker_logo_xem}
+                                        alt="tfx"
+                                        width={110}
+                                        height={30}
+                                        style={{ transform: "translateY(8px)" }}
+                                      />
+                                    </p>
+                                  </a>
+                                </div>
+                                <div className={styles.sideRanking01Rank01}>
+                                  25.00
+                                </div>
+                              </li>
+                              <li className={styles.flexCommon01}>
+                                <div className={styles.sideRanking01Icon01}>
+                                  <div className={styles.rankingIcon01Wrap01}>
+                                    <div
+                                      className={`${styles.rankingIcon01} ${styles.typeA}`}
+                                    >
+                                      <span>3</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className={styles.sideRanking01Name01}>
+                                  <a
+                                    href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494"
+                                    className="linkNoUnderline01 blk"
+                                    target="_blank"
+                                  >
+                                    <p>
+                                      <Image
+                                        src={broker_logo_tfx}
+                                        alt="xsc"
+                                        width={110}
+                                        height={30}
+                                        style={{ transform: "translateY(8px)" }}
+                                      />
+                                    </p>
+                                  </a>
+                                </div>
+                                <div className={styles.sideRanking01Rank01}>
+                                  24.00
+                                </div>
+                              </li>
+                              <li className={styles.flexCommon01}>
+                                <div className={styles.sideRanking01Icon01}>
+                                  <div className={styles.rankingIcon01Wrap01}>
+                                    <div
+                                      className={`${styles.rankingIcon01} ${styles.typeB}`}
+                                    >
+                                      <span>4</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className={styles.sideRanking01Name01}>
+                                  <a
+                                    href="https://my.xs.com/links/go/2305"
+                                    className="linkNoUnderline01 blk"
+                                    target="_blank"
+                                  >
+                                    <p>
+                                      <Image
+                                        src={broker_logo_xsc}
+                                        alt="Vantage Trading"
+                                        width={50}
+                                        height={30}
+                                        style={{ transform: "translateY(8px)" }}
+                                      />
+                                    </p>
+                                  </a>
+                                </div>
+                                <div className={styles.sideRanking01Rank01}>
+                                  23.50
+                                </div>
+                              </li>
+                              <li className={styles.flexCommon01}>
+                                <div className={styles.sideRanking01Icon01}>
+                                  <div className={styles.rankingIcon01Wrap01}>
+                                    <div
+                                      className={`${styles.rankingIcon01} ${styles.typeB}`}
+                                    >
+                                      <span>5</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className={styles.sideRanking01Name01}>
+                                  <a
+                                    href="https://www.bigboss-financial.com/ja/account/open?aid=3NvEVzuu"
+                                    target="_blank"
+                                    className="linkNoUnderline01 blk"
+                                  >
+                                    <p>
+                                      <Image
+                                        src={broker_logo_big}
+                                        alt="big"
+                                        width={110}
+                                        height={30}
+                                        style={{ transform: "translateY(8px)" }}
+                                      />
+                                    </p>
+                                  </a>
+                                </div>
+                                <div className={styles.sideRanking01Rank01}>
+                                  23.00
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <p className={styles.sideBtnCommon01}>
+                            <a
+                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                              target="_blank"
+                              className={styles.styleLabe500}
+                            >
+                              海外FX業者 人気ランキング &gt;
+                            </a>
+                          </p>
+                        </div>
+                        <Image
+                          src={vantage_banner}
+                          alt="vantage banner"
+                          className={styles.layoutImage}
+                        />
+                      </div>
+                    </section>
+                    <section
+                      className={styles.faqPickupBox}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
                       <h2
                         id="article07"
                         className={`${styles.typeArticle07} ${styles.textLayoutWide}`}
                       >
-                        Vantage Trading - よくある質問（FAQ）
+                        7. Vantage Trading - よくある質問（FAQ）
                       </h2>
-                      <p className={styles.textLayoutWide}>
+                      <p className={styles.center}>
                         Vantage Tradingに関する、よくある質問をまとめました。
                       </p>
-                      <hr className={styles.hr07} />
-                      <ol style={{ marginTop: 45 }}>
-                        <li>
-                          <div className={styles.faqPickupBoxQ}>
-                            <p>
-                              <a href="!#" className="inline">
-                                🔎 Vantage
-                                Tradingの最大レバレッジを教えてください。
-                              </a>
-                            </p>
+                      <ol className={styles.informationEdit}>
+                        <li
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div style={{ flex: 1, paddingRight: "20px" }}>
+                            <div className={styles.faqPickupBoxQ}>
+                              <p>
+                                <a
+                                  href="!#"
+                                  className={styles.inlineStyle}
+                                >
+                                  Vantage
+                                  Tradingの最大レバレッジを教えてください。
+                                </a>
+                              </p>
+                            </div>
+                            <div className={styles.faqPickupBoxA}>
+                              <p className={styles.inlineStyleItem}>
+                                Vantage
+                                Trading（ヴァンテージ）では、プレミアム口座で最大2,000倍、スタンダード口座とRAW
+                                ECN口座は最大1,000倍のレバレッジを提供しています。但し、一部商品は、銘柄によってレバレッジが固定されております。
+                              </p>
+                              <p className={styles.tr}>
+                                <a
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  className="inline"
+                                >
+                                  続きを読む
+                                </a>
+                              </p>
+                            </div>
                           </div>
-                          <div className={styles.faqPickupBoxA}>
-                            <p>
-                              Vantage
-                              Trading（ヴァンテージ）では、プレミアム口座で最大2,000倍、スタンダード口座とRAW
-                              ECN口座は最大1,000倍のレバレッジを提供しています。但し、一部商品は、銘柄によってレバレッジが固定されております。
-                            </p>
-                            <p className={styles.tr}>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                続きを読む
-                              </a>
-                            </p>
-                          </div>
+                          <img
+                            className={styles.point_icon_delete}
+                            src="icon_delete.webp"
+                            alt="img delete"
+                          />
                         </li>
-                        <li>
-                          <div className={styles.faqPickupBoxQ}>
-                            <p>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                🔎 Vantage
-                                Tradingのチャットは日本語で利用できますか？
-                              </a>
-                            </p>
+                        <li
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div style={{ flex: 1, paddingRight: "20px" }}>
+                            <div className={styles.faqPickupBoxQ}>
+                              <p>
+                                <a
+                                  href="!#"
+                                  className={styles.inlineStyle}
+                                >
+                                  Vantage
+                                  Tradingのチャットは日本語で利用できますか？
+                                </a>
+                              </p>
+                            </div>
+                            <div className={styles.faqPickupBoxA}>
+                              <p className={styles.inlineStyleItem}>
+                                はい、Vantage
+                                Trading（ヴァンテージ）では、平日の午前9:00～午後5:00（日本時間）の間、日本語でチャットをご利用になれますが、google翻訳による日本語対応となります。日本人による対応が必要な場合は、メールでのお問い合わせをおすすめ致します。
+                              </p>
+                              <p className={styles.tr}>
+                                <a
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  className="inline"
+                                >
+                                  続きを読む
+                                </a>
+                              </p>
+                            </div>
                           </div>
-                          <div className={styles.faqPickupBoxA}>
-                            <p>
-                              はい、Vantage
-                              Trading（ヴァンテージ）では、平日の午前9:00～午後5:00（日本時間）の間、日本語でチャットをご利用になれますが、google翻訳による日本語対応となります。日本人による対応が必要な場合は、メールでのお問い合わせをおすすめ致します。
-                            </p>
-                            <p className={styles.tr}>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                続きを読む
-                              </a>
-                            </p>
-                          </div>
+                          <img
+                            className={styles.point_icon_delete}
+                            src="icon_delete.webp"
+                            alt="img delete"
+                          />
                         </li>
-                        <li>
-                          <div className={styles.faqPickupBoxQ}>
-                            <p>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                🔎 Vantage
-                                Tradingのスプレッドはどのくらいですか？
-                              </a>
-                            </p>
+                        <li
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div style={{ flex: 1, paddingRight: "20px" }}>
+                            <div className={styles.faqPickupBoxQ}>
+                              <p>
+                                <a
+                                  href="!#"
+                                  className={styles.inlineStyle}
+                                >
+                                  Vantage
+                                  Tradingのスプレッドはどのくらいですか？
+                                </a>
+                              </p>
+                            </div>
+                            <div className={styles.faqPickupBoxA}>
+                              <p className={styles.inlineStyleItem}>
+                                Vantage
+                                Trading（ヴァンテージ）のスプレッドは、銘柄や口座タイプによって異なりますが最低0.0pipsからとなります。尚、全ての口座タイプで変動スプレッド方式を採用しておりますが、RAW
+                                ECN口座は、他の口座タイプに比べて狭いスプレッド環境を提供しています。
+                              </p>
+                              <p className={styles.tr}>
+                                <a
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  className="inline"
+                                >
+                                  続きを読む
+                                </a>
+                              </p>
+                            </div>
                           </div>
-                          <div className={styles.faqPickupBoxA}>
-                            <p>
-                              Vantage
-                              Trading（ヴァンテージ）のスプレッドは、銘柄や口座タイプによって異なりますが最低0.0pipsからとなります。尚、全ての口座タイプで変動スプレッド方式を採用しておりますが、RAW
-                              ECN口座は、他の口座タイプに比べて狭いスプレッド環境を提供しています。
-                            </p>
-                            <p className={styles.tr}>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                続きを読む
-                              </a>
-                            </p>
-                          </div>
+                          <img
+                            className={styles.point_icon_delete}
+                            src="icon_delete.webp"
+                            alt="img delete"
+                          />
                         </li>
-                        <li>
-                          <div className={styles.faqPickupBoxQ}>
-                            <p>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                🔎 Vantage
-                                Tradingの口座へクレジットカードで入金できますか？
-                              </a>
-                            </p>
+                        <li
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div style={{ flex: 1, paddingRight: "20px" }}>
+                            <div className={styles.faqPickupBoxQ}>
+                              <p>
+                                <a
+                                  href="!#"
+                                  className={styles.inlineStyle}
+                                >
+                                  Vantage
+                                  Tradingの口座へクレジットカードで入金できますか？
+                                </a>
+                              </p>
+                            </div>
+                            <div className={styles.faqPickupBoxA}>
+                              <p className={styles.inlineStyleItem}>
+                                はい、Vantage
+                                Trading（ヴァンテージ）では、VISA・mastercard・JCBのクレジットカード若しくはデビットカードをご利用頂けます。尚、JCBカードにて利用可能な通貨は日本円のみですが、VISAカードとmastercardカードは日本円と米ドルどちらでもご利用いただけます。
+                              </p>
+                              <p className={styles.tr}>
+                                <a
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  className="inline"
+                                >
+                                  続きを読む
+                                </a>
+                              </p>
+                            </div>
                           </div>
-                          <div className={styles.faqPickupBoxA}>
-                            <p>
-                              はい、Vantage
-                              Trading（ヴァンテージ）では、VISA・mastercard・JCBのクレジットカード若しくはデビットカードをご利用頂けます。尚、JCBカードにて利用可能な通貨は日本円のみですが、VISAカードとmastercardカードは日本円と米ドルどちらでもご利用いただけます。
-                            </p>
-                            <p className={styles.tr}>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                続きを読む
-                              </a>
-                            </p>
-                          </div>
+                          <img
+                            className={styles.point_icon_delete}
+                            src="icon_delete.webp"
+                            alt="img delete"
+                          />
                         </li>
-                        <li>
-                          <div className={styles.faqPickupBoxQ}>
-                            <p>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                🔎 Vantage
-                                Tradingでは出金までどれぐらい時間がかかりますか？
-                              </a>
-                            </p>
+                        <li
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                          }}
+                        >
+                          <div style={{ flex: 1, paddingRight: "20px" }}>
+                            <div className={styles.faqPickupBoxQ}>
+                              <p>
+                                <a
+                                  href="!#"
+                                  className={styles.inlineStyle}
+                                >
+                                  Vantage
+                                  Tradingでは出金までどれぐらい時間がかかりますか？
+                                </a>
+                              </p>
+                            </div>
+                            <div className={styles.faqPickupBoxA}>
+                              <p className={styles.inlineStyleItem}>
+                                Vantage
+                                Trading（ヴァンテージ）では、出金申請をしてから通常48営業時間以内に処理が行われます。そのため金～日曜日の申請の場合、最長で火曜日までお待ち頂く場合があります。お急ぎの際は、申請後にチャットにて連絡することで通常より早く手続きが行われます。
+                              </p>
+                              <p className={styles.tr}>
+                                <a
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  className="inline"
+                                >
+                                  続きを読む
+                                </a>
+                              </p>
+                            </div>
                           </div>
-                          <div className={styles.faqPickupBoxA}>
-                            <p>
-                              Vantage
-                              Trading（ヴァンテージ）では、出金申請をしてから通常48営業時間以内に処理が行われます。そのため金～日曜日の申請の場合、最長で火曜日までお待ち頂く場合があります。お急ぎの際は、申請後にチャットにて連絡することで通常より早く手続きが行われます。
-                            </p>
-                            <p className={styles.tr}>
-                              <a
-                                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                                className="inline"
-                              >
-                                続きを読む
-                              </a>
-                            </p>
-                          </div>
+                          <img
+                            className={styles.point_icon_delete}
+                            src="icon_delete.webp"
+                            alt="img delete"
+                          />
                         </li>
                       </ol>
                     </section>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.layoutSide01}>
-              <div className={styles.wrapperLayoutSide}>
-                <div>
-                <a
-                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                  target="_blank"
-                >
-                  <div className={styles.btnAccount04}>
-                    <TiTick
-                      style={{ transform: "translateY(3px)" }}
-                      fontSize={40}
-                    />
-                    <span
-                      style={{
-                        transform: "translateY(-10px)",
-                        display: "inline-block",
-                        verticalAlign: "middle",
-                      }}
-                    >
-                      リアル口座開設
-                    </span>
-                  </div>
-                </a>
-                <div className={styles.sideRanking01}>
-                  <div className={styles.center}>
-                    <p className={styles.sideText}>海外FX業者</p>
-                    <p className={styles.sideCommonTitle01}>人気ランキング</p>
-                  </div>
-                </div>
-                <div className={styles.sideRanking01Inner01}>
-                  <ul
-                    className={`${styles.flexCommon01} ${styles.sideRanking01List01}`}
-                  >
-                    <li className={styles.flexCommon01}>
-                      <div className={styles.sideRanking01Icon01}>
-                        <div className={styles.rankingIcon01Wrap01}>
-                          <div
-                            className={`${styles.rankingIcon01} ${styles.typeA}`}
-                          >
-                            <span>1</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className={styles.sideRanking01Name01}>
-                        <a
-                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                          className="linkNoUnderline01 blk"
-                          target="_blank"
-                        >
-                          <p>
-                            <Image
-                              src={logo}
-                              alt="xem"
-                              width={110}
-                              height={30}
-                              style={{ transform: "translateY(6px)" }}
-                            />
-                          </p>
-                        </a>
-                      </div>
-                      <div className={styles.sideRanking01Rank01}>25.50</div>
-                    </li>
-                    <li className={styles.flexCommon01}>
-                      <div className={styles.sideRanking01Icon01}>
-                        <div className={styles.rankingIcon01Wrap01}>
-                          <div
-                            className={`${styles.rankingIcon01} ${styles.typeA}`}
-                          >
-                            <span>2</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className={styles.sideRanking01Name01}>
-                        <a
-                          href="https://clicks.affstrack.com/c?c=999173&l=en&p=0"
-                          className="linkNoUnderline01 blk"
-                          target="_blank"
-                        >
-                          <p>
-                            <Image
-                              src={broker_logo_xem}
-                              alt="tfx"
-                              width={110}
-                              height={30}
-                              style={{ transform: "translateY(8px)" }}
-                            />
-                          </p>
-                        </a>
-                      </div>
-                      <div className={styles.sideRanking01Rank01}>25.00</div>
-                    </li>
-                    <li className={styles.flexCommon01}>
-                      <div className={styles.sideRanking01Icon01}>
-                        <div className={styles.rankingIcon01Wrap01}>
-                          <div
-                            className={`${styles.rankingIcon01} ${styles.typeA}`}
-                          >
-                            <span>3</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className={styles.sideRanking01Name01}>
-                        <a
-                          href="https://partners.titanfx.com/registration/ref?cp=IAJ4KGP4TX494"
-                          className="linkNoUnderline01 blk"
-                          target="_blank"
-                        >
-                          <p>
-                            <Image
-                              src={broker_logo_tfx}
-                              alt="xsc"
-                              width={110}
-                              height={30}
-                              style={{ transform: "translateY(8px)" }}
-                            />
-                          </p>
-                        </a>
-                      </div>
-                      <div className={styles.sideRanking01Rank01}>24.00</div>
-                    </li>
-                    <li className={styles.flexCommon01}>
-                      <div className={styles.sideRanking01Icon01}>
-                        <div className={styles.rankingIcon01Wrap01}>
-                          <div
-                            className={`${styles.rankingIcon01} ${styles.typeB}`}
-                          >
-                            <span>4</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className={styles.sideRanking01Name01}>
-                        <a
-                          href="https://my.xs.com/links/go/2305"
-                          className="linkNoUnderline01 blk"
-                          target="_blank"
-                        >
-                          <p>
-                            <Image
-                              src={broker_logo_xsc}
-                              alt="Vantage Trading"
-                              width={50}
-                              height={30}
-                              style={{ transform: "translateY(8px)" }}
-                            />
-                          </p>
-                        </a>
-                      </div>
-                      <div className={styles.sideRanking01Rank01}>23.50</div>
-                    </li>
-                    <li className={styles.flexCommon01}>
-                      <div className={styles.sideRanking01Icon01}>
-                        <div className={styles.rankingIcon01Wrap01}>
-                          <div
-                            className={`${styles.rankingIcon01} ${styles.typeB}`}
-                          >
-                            <span>5</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className={styles.sideRanking01Name01}>
-                        <a
-                          href="https://www.bigboss-financial.com/ja/account/open?aid=3NvEVzuu"
-                          target="_blank"
-                          className="linkNoUnderline01 blk"
-                        >
-                          <p>
-                            <Image
-                              src={broker_logo_big}
-                              alt="big"
-                              width={110}
-                              height={30}
-                              style={{ transform: "translateY(8px)" }}
-                            />
-                          </p>
-                        </a>
-                      </div>
-                      <div className={styles.sideRanking01Rank01}>23.00</div>
-                    </li>
-                  </ul>
-                </div>
-                <p className={styles.sideBtnCommon01}>
-                  <a
-                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                    target="_blank"
-                  >
-                    海外FX業者 人気ランキング &gt;
-                  </a>
-                </p>
-                <div style={{ marginTop: 25 }}>
-                  <a
-                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                    target="_blank"
-                  >
-                    <Image
-                      src={vantage_banner}
-                      alt="vantage banner"
-                      style={{ width: "100%", height: "100%" }}
-                    />
-                  </a>
-                </div>
                 </div>
               </div>
             </div>
@@ -3144,117 +3228,118 @@ export default function Home() {
         </section>
         <footer className={styles.footer}>
           <div className={styles.zIndexx}>
-          <div className={styles.inner}>
-            <div className={styles.footerConnect}>
-              <ul className={styles.footerShare}>
-                <li>
-                  <a href="!#">規定</a>
-                </li>
-                <li>
-                  <a href="!#">個人情報保護方針</a>
-                </li>
-                <li>
-                  <a href="!#">プライバシーポリシー</a>
-                </li>
-                <li>
-                  <a href="!#">AML規約</a>
-                </li>
-              </ul>
-            </div>
-            <div className={styles.footerRisk}>
-              <p>
-                Vantage Trading は、外国為替市場における金融サービス業界の
-                <a href="/dispute-resolution/" target="_blank">
-                  紛争解決
-                </a>
-                に従事する国際組織である
-                <a href="!#" target="_blank">
-                  金融委員会 (The Financial Commission
-                </a>
-                ) のメンバーです。
-              </p>
-              <p className={styles.footerRiskTitle}>リスク警告</p>
-              <p>
-                デリバティブ取引は、元本や利益が保証されている金融商品ではありません。大きなリスクが伴いますので、すべての投資家に適しているわけではありません。プロのお客様でも、初期投資額を大幅に上回る損失を被る可能性があります。弊社のデリバティブ商品をお取引する場合、お客様は原資産である金融資産に対する権利、義務、資格を有しません。過去の実績は将来のパフォーマンスを示唆するものではありませんので、ご注意ください。税法は変更される可能性があります。本ウェブサイトの情報は一般的なものであり、お客様の個人的な目標、財務状況、ニーズ等を考慮するものではありません。弊社の法的文書などを熟読し、取引内容や仕組み、リスクなどを十分ご理解いただいた上で、ご自身の判断にてお取引していただくようお願いいたします。
-              </p>
-            </div>
-            <div className={styles.footerRegion}>
-              <p className={styles.footerRiskTitle}>地域制限</p>
-              <p>
-                弊社は、北朝鮮、米国およびその他一部の地域の居住者に対して、弊社のサービスを提供していません。
-                <br />
-                本サイト上の掲載情報および商品・サービスを提供している国や地域は、現地の法律または規制に反して提供を意図するものではありません。
-              </p>
-            </div>
-            <div className={styles.footerCompany}>
-              <p>
-                Vantage Tradingは、 Vantage Prime Trading Limited の商標名です(
-                <a href="!#" target="_blank">
-                  WIPO
-                </a>
-                )(
-                <a href="!#" target="_blank">
-                  JPO
-                </a>
-                )。
-              </p>
-            </div>
-            <div className={styles.footerCompanyDetails}>
-              <ul>
-                <li>商号：Vantage Prime Trading Limited.</li>
-                <li>
-                  本社：10 Manoel Street , Castries , St.Lucia (
-                  <a href="!#" target="_blank">
-                    地図
-                  </a>
-                  )<br />
-                  電子メール： support@vantagetradings.com
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            className={styles.footerBtn01}
-            style={{ display: isVisible ? "block" : "none" }}
-          >
-            <div className={styles.footerBtn01Inner}>
-              <div className={styles.footerBtn01Txt}>
-                <a
-                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
-                  target="_blank"
-                  className={styles.dispTable}
-                >
-                  <div>
-                    <div className={styles.icon}>
-                      <p>特典</p>
-                    </div>
-                  </div>
-                  <div className={styles.txt}>
-                    <p className={styles.subTxt}>Vantage Trading</p>
-                    <p className={styles.marker}>
-                      15,000円 + 20ドルトレード資金プレゼント
-                    </p>
-                  </div>
-                </a>
+            <div className={styles.inner}>
+              <div className={styles.footerConnect}>
+                <ul className={styles.footerShare}>
+                  <li>
+                    <a href="!#">規定</a>
+                  </li>
+                  <li>
+                    <a href="!#">個人情報保護方針</a>
+                  </li>
+                  <li>
+                    <a href="!#">プライバシーポリシー</a>
+                  </li>
+                  <li>
+                    <a href="!#">AML規約</a>
+                  </li>
+                </ul>
               </div>
-              <div className={styles.footerBtn01Btn}>
-                <div className={styles.btnAccount05}>
+              <div className={styles.footerRisk}>
+                <p>
+                  Vantage Trading は、外国為替市場における金融サービス業界の
+                  <a href="/dispute-resolution/" target="_blank">
+                    紛争解決
+                  </a>
+                  に従事する国際組織である
+                  <a href="!#" target="_blank">
+                    金融委員会 (The Financial Commission
+                  </a>
+                  ) のメンバーです。
+                </p>
+                <p className={styles.footerRiskTitle}>リスク警告</p>
+                <p>
+                  デリバティブ取引は、元本や利益が保証されている金融商品ではありません。大きなリスクが伴いますので、すべての投資家に適しているわけではありません。プロのお客様でも、初期投資額を大幅に上回る損失を被る可能性があります。弊社のデリバティブ商品をお取引する場合、お客様は原資産である金融資産に対する権利、義務、資格を有しません。過去の実績は将来のパフォーマンスを示唆するものではありませんので、ご注意ください。税法は変更される可能性があります。本ウェブサイトの情報は一般的なものであり、お客様の個人的な目標、財務状況、ニーズ等を考慮するものではありません。弊社の法的文書などを熟読し、取引内容や仕組み、リスクなどを十分ご理解いただいた上で、ご自身の判断にてお取引していただくようお願いいたします。
+                </p>
+              </div>
+              <div className={styles.footerRegion}>
+                <p className={styles.footerRiskTitle}>地域制限</p>
+                <p>
+                  弊社は、北朝鮮、米国およびその他一部の地域の居住者に対して、弊社のサービスを提供していません。
+                  <br />
+                  本サイト上の掲載情報および商品・サービスを提供している国や地域は、現地の法律または規制に反して提供を意図するものではありません。
+                </p>
+              </div>
+              <div className={styles.footerCompany}>
+                <p>
+                  Vantage Tradingは、 Vantage Prime Trading Limited
+                  の商標名です(
+                  <a href="!#" target="_blank">
+                    WIPO
+                  </a>
+                  )(
+                  <a href="!#" target="_blank">
+                    JPO
+                  </a>
+                  )。
+                </p>
+              </div>
+              <div className={styles.footerCompanyDetails}>
+                <ul>
+                  <li>商号：Vantage Prime Trading Limited.</li>
+                  <li>
+                    本社：10 Manoel Street , Castries , St.Lucia (
+                    <a href="!#" target="_blank">
+                      地図
+                    </a>
+                    )<br />
+                    電子メール： support@vantagetradings.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className={styles.footerBtn01}
+              style={{ display: isVisible ? "block" : "none" }}
+            >
+              <div className={styles.footerBtn01Inner}>
+                <div className={styles.footerBtn01Txt}>
                   <a
                     href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
                     target="_blank"
+                    className={styles.dispTable}
                   >
-                    <span className="dispTable mla mra">
-                      <span className="footerBtn01BtnCheck dispNoneS"></span>
-                      <span>
-                        <span className="dispNoneAU">Vantage </span>
-                        リアル口座開設
-                      </span>
-                    </span>
+                    <div>
+                      <div className={styles.icon}>
+                        <p>特典</p>
+                      </div>
+                    </div>
+                    <div className={styles.txt}>
+                      <p className={styles.subTxt}>Vantage Trading</p>
+                      <p className={styles.marker}>
+                        15,000円 + 20ドルトレード資金プレゼント
+                      </p>
+                    </div>
                   </a>
+                </div>
+                <div className={styles.footerBtn01Btn}>
+                  <div className={styles.btnAccount05}>
+                    <a
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      target="_blank"
+                    >
+                      <span className="dispTable mla mra">
+                        <span className="footerBtn01BtnCheck dispNoneS"></span>
+                        <span>
+                          <span className="dispNoneAU">Vantage </span>
+                          リアル口座開設
+                        </span>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </footer>
       </div>
