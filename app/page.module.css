@@ -558,7 +558,7 @@
   top:0;
   width: 24px;
   height: 24px;
-  background-image: url('/icon_check.webp');
+  background-image: url('../public/icon_check.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
