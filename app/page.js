@@ -7,7 +7,7 @@ import logo from "../public/logo.png";
 import slide_1 from "../public/vantage_cup.png";
 import slide_2 from "../public/slide_2.webp";
 import slide_3 from "../public/slide3.jpg";
-import van02 from "../public/vantage_reward.png";
+import van02 from "../public/vantage_rewards.png";
 import chart from "../public/chart.png";
 import icon_update02 from "../public/icon_update02.webp";
 import icon_agenda01 from "../public/icon_agenda01.webp";
