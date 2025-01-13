@@ -60,7 +60,7 @@ export default function Home() {
               <ul className={styles.flex}>
                 <li className={styles.navMediumUserList}>
                   <a
-                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                     target="_blank"
                   >
                     <p className={styles.navLiveLink}>
@@ -86,7 +86,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className={styles.navLoginLink}>
-                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2">
+                  <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       id="Frame_427318659"
@@ -159,7 +159,7 @@ export default function Home() {
               <a
                 className={styles.row3Btn}
                 target="_blank"
-                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
               >
                 エントリーフォームはこちら
                 <span className={styles.btnArrow}>
@@ -173,7 +173,7 @@ export default function Home() {
             <div className={styles.bottomBlockBox02}>
               <a
                 className={styles.row3Btn}
-                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                 target="_blank"
               >
                 最短3分でお取引可能！
@@ -188,7 +188,7 @@ export default function Home() {
           <div className={styles.slide3}>
             <a
               className={styles.row3Btn}
-              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
               target="_blank"
             >
               <Image
@@ -205,7 +205,7 @@ export default function Home() {
           <div className={styles.rankingListContents}>
             <div className={styles.rankingListContentsInner}>
               <div className={styles.rankingListTitle}>
-                <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2">
+                <a href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4">
                   <div
                     style={{
                       display: "flex",
@@ -286,14 +286,14 @@ export default function Home() {
                     style={{ gap: 10, justifyContent: "center" }}
                   >
                     <a
-                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                       target="_blank"
                       className={styles.btnAccount03}
                     >
                       リアル口座開設
                     </a>
                     <a
-                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                       target="_blank"
                       className={styles.btnAccount04}
                     >
@@ -343,7 +343,7 @@ export default function Home() {
             </div>
             <div style={{ display: "flex", justifyContent: "center" }} className={styles.btnAcc}>
               <a
-                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                 target="_blank"
                 className={styles.btnAccount04}
               >
@@ -929,7 +929,7 @@ export default function Home() {
                             }}
                           >
                             <a
-                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                               target="_blank"
                               className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                             >
@@ -956,7 +956,7 @@ export default function Home() {
                           </h3>
                           <div className={styles.styleLabel}>
                             <a
-                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                               target="_blank"
                             >
                               <span className={`${styles.tUl}`} style={{textDecoration: "underline"}}>
@@ -1004,7 +1004,7 @@ export default function Home() {
                                 <tr>
                                   <td className={styles.bgColorGray02}>
                                     <a
-                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                       target="_blank"
                                     >
                                       <div>
@@ -1178,7 +1178,7 @@ export default function Home() {
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
                                     <a
-                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                       target="_blank"
                                     >
                                       <Image
@@ -1291,7 +1291,7 @@ export default function Home() {
                                 <tr>
                                   <td style={{ textAlign: "center" }}>
                                     <a
-                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                       target="_blank"
                                     >
                                       <Image
@@ -1829,7 +1829,7 @@ export default function Home() {
                           style={{ display: "flex", justifyContent: "center" }}
                         >
                           <a
-                            href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                            href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                             target="_blank"
                             className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                           >
@@ -1964,7 +1964,7 @@ export default function Home() {
                       </h3>
                       <div className={styles.styleLabel}>
                         <a
-                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                           target="_blank"
                         >
                           <span className={styles.tUl}>Vantage Trading</span>
@@ -1984,7 +1984,7 @@ export default function Home() {
                         style={{ display: "flex", justifyContent: "center" }}
                       >
                         <a
-                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                           target="_blank"
                           className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                         >
@@ -2195,7 +2195,7 @@ export default function Home() {
                         style={{ display: "flex", justifyContent: "center" }}
                       >
                         <a
-                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                          href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                           target="_blank"
                           className={`${styles.btnAccount04} ${styles.textLayoutWide}`}
                         >
@@ -2611,7 +2611,7 @@ export default function Home() {
                           className={styles.layoutInformationItem}
                         >
                           <a
-                            href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                            href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                             target="_blank"
                           >
                             <div className={styles.btnAccount04}>
@@ -2654,7 +2654,7 @@ export default function Home() {
                                 </div>
                                 <div className={styles.sideRanking01Name01}>
                                   <a
-                                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                     className="linkNoUnderline01 blk"
                                     target="_blank"
                                   >
@@ -2801,7 +2801,7 @@ export default function Home() {
                           </div>
                           <p className={styles.sideBtnCommon01}>
                             <a
-                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                              href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                               target="_blank"
                               className={styles.styleLabe500}
                             >
@@ -2860,7 +2860,7 @@ export default function Home() {
                               </p>
                               <p className={styles.tr}>
                                 <a
-                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                   className="inline"
                                 >
                                   続きを読む
@@ -2899,7 +2899,7 @@ export default function Home() {
                               </p>
                               <p className={styles.tr}>
                                 <a
-                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                   className="inline"
                                 >
                                   続きを読む
@@ -2939,7 +2939,7 @@ export default function Home() {
                               </p>
                               <p className={styles.tr}>
                                 <a
-                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                   className="inline"
                                 >
                                   続きを読む
@@ -2978,7 +2978,7 @@ export default function Home() {
                               </p>
                               <p className={styles.tr}>
                                 <a
-                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                   className="inline"
                                 >
                                   続きを読む
@@ -3017,7 +3017,7 @@ export default function Home() {
                               </p>
                               <p className={styles.tr}>
                                 <a
-                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                                  href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                                   className="inline"
                                 >
                                   続きを読む
@@ -3210,7 +3210,7 @@ export default function Home() {
                 <div className={styles.bottomBlockBox02}>
                   <a
                     className={styles.row3Btn}
-                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                   >
                     最短3分でお取引可能！
                     <br />
@@ -3305,7 +3305,7 @@ export default function Home() {
               <div className={styles.footerBtn01Inner}>
                 <div className={styles.footerBtn01Txt}>
                   <a
-                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                    href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                     target="_blank"
                     className={styles.dispTable}
                   >
@@ -3325,7 +3325,7 @@ export default function Home() {
                 <div className={styles.footerBtn01Btn}>
                   <div className={styles.btnAccount05}>
                     <a
-                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzQ2"
+                      href="https://www.vantagetradings.com/open-live-account/?affid=MTUwNzA4"
                       target="_blank"
                     >
                       <span className="dispTable mla mra">
